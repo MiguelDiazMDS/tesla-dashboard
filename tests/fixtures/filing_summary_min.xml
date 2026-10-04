@@ -1,0 +1,37 @@
+<FilingSummary>
+<MyReports>
+<Report instance="tsla-20260630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R35.htm</HtmlFileName>
+      <LongName>9955522 - Disclosure - Summary of Significant Accounting Policies - Schedule of Disaggregation of Revenue by Major Source (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.tesla.com/role/SummaryofSignificantAccountingPoliciesScheduleofDisaggregationofRevenuebyMajorSourceDetails</Role>
+      <ShortName>Summary of Significant Accounting Policies - Schedule of Disaggregation of Revenue by Major Source (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>35</Position>
+    </Report>
+<Report instance="tsla-20260630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R63.htm</HtmlFileName>
+      <LongName>9955550 - Disclosure - Segment Reporting and Information about Geographic Areas - Schedule of Total Revenues and Gross Profit by Reportable Segment (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.tesla.com/role/SegmentReportingandInformationaboutGeographicAreasScheduleofTotalRevenuesandGrossProfitbyReportableSegmentDetails</Role>
+      <ShortName>Segment Reporting and Information about Geographic Areas - Schedule of Total Revenues and Gross Profit by Reportable Segment (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>63</Position>
+    </Report>
+<Report instance="tsla-20260630.htm">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R64.htm</HtmlFileName>
+      <LongName>9955551 - Disclosure - Segment Reporting and Information about Geographic Areas - Schedule of Revenues by Geographic Area (Details)</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.tesla.com/role/SegmentReportingandInformationaboutGeographicAreasScheduleofRevenuesbyGeographicAreaDetails</Role>
+      <ShortName>Segment Reporting and Information about Geographic Areas - Schedule of Revenues by Geographic Area (Details)</ShortName>
+      <MenuCategory>Details</MenuCategory>
+      <Position>64</Position>
+    </Report>
+</MyReports>
+</FilingSummary>

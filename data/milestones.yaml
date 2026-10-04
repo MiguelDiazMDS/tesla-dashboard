@@ -1,0 +1,731 @@
+# Borrador tanda 2 = tanda 1 revisada por el usuario + historial de promesas (capa 2).
+# Investigacion a 2026-09-23. Ver informe_tanda1.md e informe_tanda2.md.
+# Criterio de fuente_tipo: cartas, 10-Q/10-K, cuentas oficiales de Tesla y directivos
+# distintos de Musk -> oficial; declaraciones de Musk (llamadas, eventos, X) -> musk;
+# reguladores -> registro; prensa -> tercero.
+version: "2026-09-24"
+
+hitos:
+  - id: robotaxi-escala
+    prioridad: 1
+    titulo: "Robotaxi a escala"
+    que_debe_ocurrir: "Ampliar flota, zonas y viajes sin supervisor, y publicar datos útiles sobre utilización, incidentes, intervención remota e ingresos y costes por vehículo."
+    que_demostraria: "Es la prueba decisiva de la tesis de Tesla como negocio de movilidad autónoma. Hoy la propia empresa describe la operación sin supervisión como un despliegue en expansión; en el área de San Francisco aún indica conductor de seguridad."
+    pasos:
+      - id: sin-supervisor-todas-zonas
+        texto: "Operación sin supervisor en todas sus zonas operativas"
+        etiqueta: R
+        cumplido: null   # Q2 2026 Update: SF Bay Area sigue con "Safety Driver"
+      - id: sin-supervisor-5-metros
+        texto: "Operación sin supervisor en al menos 5 áreas metropolitanas"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-07-22"
+          fuente_tipo: oficial
+          fuente: "Tesla Q2 2026 Update: Austin, Dallas, Houston, Miami, Orlando y Tampa en «Ramping Unsupervised»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+      - id: publica-utilizacion-incidentes
+        texto: "Tesla publica utilización, incidentes e intervención remota"
+        etiqueta: R
+        cumplido: null
+      - id: publica-economia-vehiculo
+        texto: "Tesla publica ingresos y costes por vehículo, o un segmento propio"
+        etiqueta: R
+        cumplido: null
+      - id: flota-1000-sin-supervisor
+        texto: "Flota sin supervisor de al menos 1.000 vehículos"
+        etiqueta: E
+        requiere_valor: true
+        # Sin cifra oficial. Ultimo dato de terceros: casi 200 vehiculos sin supervisor
+        # (Robotaxi Tracker, via Teslarati 2026-08-31). Umbral no alcanzado.
+        cumplido: null
+    requeridos: [sin-supervisor-todas-zonas, sin-supervisor-5-metros, publica-utilizacion-incidentes, publica-economia-vehiculo, flota-1000-sin-supervisor]
+    promesas:
+      - declarada: "2019-04-22"
+        fecha_prometida: "2020"
+        fuente_tipo: musk
+        fuente: "Musk, Autonomy Day (CNBC)"
+        enlace: "https://www.cnbc.com/2019/04/22/elon-musk-says-tesla-robotaxis-will-hit-the-market-next-year.html"
+        cita: "next year for sure, we'll have over a million robotaxis on the road"
+      - declarada: "2025-07-23"
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2025/07/23/tesla-tsla-q2-2025-earnings-call-transcript/"
+        cita: "autonomous ride-hailing in probably half the population of the US"
+      - declarada: "2025-10-22"
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q3 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2025/10/22/tesla-tsla-q3-2025-earnings-call-transcript/"
+        cita: "about eight to ten metro areas by the end of the year"
+      - declarada: "2026-01-28"
+        paso: sin-supervisor-5-metros
+        fecha_prometida: "2026-Q2"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2025 Update: Dallas, Houston, Phoenix, Miami, Orlando, Tampa y Las Vegas en 1H 2026"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+      - declarada: "2026-01-28"
+        fecha_prometida: "2026"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q4 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2026/01/28/tesla-tsla-q4-2025-earnings-call-transcript/"
+        cita: "between a quarter and half of the United States by the end of the year"
+      - declarada: "2026-04-22"
+        fecha_prometida: "2026"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q1 2026 (transcripción StockAnalysis)"
+        enlace: "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/"
+        cita: "a dozen or so states by the end of this year"
+    estancado: null
+
+  - id: optimus
+    prioridad: 2
+    titulo: "Optimus comercial"
+    que_debe_ocurrir: "Iniciar producción repetible y demostrar robots que realizan tareas útiles durante periodos prolongados, con coste conocido y clientes que pagan."
+    que_demostraria: "Podría abrir un mercado nuevo, pero es la oportunidad más incierta de la lista. Tesla prevé iniciar producción en 2026 y señala que las primeras unidades se usarán para recopilar datos y desarrollar funciones: eso todavía no prueba demanda ni rentabilidad comercial."
+    pasos:
+      - id: inicio-produccion
+        texto: "Inicio de producción"
+        etiqueta: R
+        # Q2 2026 Update: lineas en instalacion, produccion "later this year". Motley Fool
+        # (2026-08-27) afirma que ya ha empezado, sin fuente primaria: no se marca.
+        cumplido: null
+      - id: produccion-repetible
+        texto: "Producción repetible, con volumen o ritmo comunicados"
+        etiqueta: R
+        cumplido: null
+      - id: tareas-utiles-prolongadas
+        texto: "Robots que hacen tareas útiles durante periodos prolongados, documentado"
+        etiqueta: R
+        cumplido: null
+      - id: coste-unitario
+        texto: "Coste unitario comunicado"
+        etiqueta: R
+        cumplido: null
+      - id: primer-cliente-externo
+        texto: "Primer cliente externo que paga"
+        etiqueta: R
+        cumplido: null
+    requeridos: [inicio-produccion, produccion-repetible, tareas-utiles-prolongadas, coste-unitario, primer-cliente-externo]
+    promesas:   # solo inicio de produccion (venta externa: historial optimus-venta-externa)
+      - declarada: "2022-04-07"
+        paso: inicio-produccion
+        fecha_prometida: "2023"
+        fuente_tipo: musk
+        fuente: "Musk, Cyber Rodeo (Electrek)"
+        enlace: "https://electrek.co/2022/04/07/tesla-production-optimus-humanoid-robot-2023/"
+        cita: "a shot of being in production for version one of Optimus hopefully next year"
+      - declarada: "2024-04-23"
+        paso: inicio-produccion
+        fecha_prometida: "2024"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q1 2024 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/04/23/tesla-tsla-q1-2024-earnings-call-transcript/"
+        cita: "Optimus in limited production in the natural factory itself"
+      - declarada: "2024-07-23"
+        paso: inicio-produccion
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2024 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/07/24/tesla-tsla-q2-2024-earnings-call-transcript/"
+        cita: "limited production starting early next year"
+      - declarada: "2025-01-29"
+        paso: inicio-produccion
+        fecha_prometida: "2025"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2024 Update: producción piloto de Optimus prevista en 2025"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+        cita: "ahead of planned pilot production in 2025"
+      - declarada: "2025-07-23"
+        paso: inicio-produccion
+        fecha_prometida: "2026"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2025/07/23/tesla-tsla-q2-2025-earnings-call-transcript/"
+        cita: "and then scale production next year"
+      - declarada: "2026-01-28"
+        paso: inicio-produccion
+        fecha_prometida: "2026"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2025 Update: primera línea de producción"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+        cita: "start of production planned before the end of 2026"
+      - declarada: "2026-04-22"
+        paso: inicio-produccion
+        fecha_prometida: "2026-08"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q1 2026 (transcripción StockAnalysis)"
+        enlace: "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/"
+        cita: "somewhere around the late July, August timeframe"
+      - declarada: "2026-07-22"
+        paso: inicio-produccion
+        fecha_prometida: "2026"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2026 Update: líneas de Optimus en Fremont"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+        cita: "with anticipated production later this year"
+    estancado: null
+
+  - id: fsd
+    prioridad: 3
+    titulo: "FSD: crecimiento y permisos"
+    que_debe_ocurrir: "Mantener el crecimiento de suscriptores de pago y extender las autorizaciones a más mercados, sin perder seguridad ni margen."
+    que_demostraria: "Es la vía más directa para convertir software ya distribuido en beneficio recurrente. Tesla comunicó 1,48 millones de suscripciones activas al cierre del segundo trimestre. La aprobación neerlandesa ya ocurrió; la expansión geográfica sigue pendiente. Conviene distinguir FSD Supervised, que exige atención del conductor, de un vehículo autónomo."
+    # Un paso por mercado donde FSD (Supervised) -asistencia de nivel 2, conductor atento- esta
+    # autorizado o disponible. La fecha es la de la fuente citada (ver informe: fechas reales de lanzamiento).
+    pasos:
+      - id: mercado-estados-unidos
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Estados Unidos"
+        etiqueta: R
+        cumplido:
+          fecha: "2023-01-25"
+          fuente_tipo: oficial
+          fuente: "Tesla Q4 2022 Update: «wide release of FSD Beta in the US and Canada»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459023000799/tsla-ex991_127.htm"
+      - id: mercado-canada
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Canadá"
+        etiqueta: R
+        cumplido:
+          fecha: "2023-01-25"
+          fuente_tipo: oficial
+          fuente: "Tesla Q4 2022 Update: «wide release of FSD Beta in the US and Canada»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459023000799/tsla-ex991_127.htm"
+      - id: mercado-mexico
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en México"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-05-20"
+          fuente_tipo: oficial
+          fuente: "Post de Tesla en X con la lista de mercados con FSD Supervised"
+          enlace: "https://x.com/Tesla/status/2057226337010745348"
+      - id: mercado-puerto-rico
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Puerto Rico"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-05-20"
+          fuente_tipo: oficial
+          fuente: "Post de Tesla en X con la lista de mercados con FSD Supervised"
+          enlace: "https://x.com/Tesla/status/2057226337010745348"
+      - id: mercado-china
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en China"
+        etiqueta: R
+        nota: "Despliegue limitado: según CnEVPost (2026-05-21), Tesla China aún no lo había publicado en su web."
+        cumplido:
+          fecha: "2025-04-22"
+          fuente_tipo: oficial
+          fuente: "Tesla Q1 2025 Update: «We launched FSD (Supervised) in China»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018851/exhbit991.htm"
+      - id: mercado-australia
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Australia"
+        etiqueta: R
+        cumplido:
+          fecha: "2025-10-22"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2025 Update: lanzamiento en Australia y Nueva Zelanda"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+      - id: mercado-nueva-zelanda
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Nueva Zelanda"
+        etiqueta: R
+        cumplido:
+          fecha: "2025-10-22"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2025 Update: lanzamiento en Australia y Nueva Zelanda"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+      - id: mercado-corea-del-sur
+        tipo: mercado
+        texto: "FSD (Supervised) disponible en Corea del Sur"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-01-28"
+          fuente_tipo: oficial
+          fuente: "Tesla Q4 2025 Update: «We launched FSD (Supervised) in South Korea»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+      - id: mercado-paises-bajos
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Países Bajos"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-04-10"
+          fuente_tipo: registro
+          fuente: "RDW: homologación europea con validez provisional en Países Bajos"
+          enlace: "https://www.rdw.nl/en/news/2026/rdw-explanation-of-european-type-approval-tesla-with-provisional-validity-in-the-netherlands"
+      - id: mercado-lituania
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Lituania"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-07-22"
+          fuente_tipo: oficial
+          fuente: "Tesla Q2 2026 Update: aprobaciones en Lituania, Estonia, Dinamarca y Bélgica"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+      - id: mercado-estonia
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Estonia"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-05-29"
+          fuente_tipo: registro
+          fuente: "Transpordiamet reconoce la homologación neerlandesa"
+          enlace: "https://transpordiamet.ee/uudised/transpordiamet-kiitis-heaks-tesla-juhiabisusteemi-hollandi-tuubikinnituse"
+      - id: mercado-dinamarca
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Dinamarca"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-06-09"
+          fuente_tipo: registro
+          fuente: "Færdselsstyrelsen: aprobación provisional"
+          enlace: "https://www.fstyr.dk/nyheder/2026/jun/teslas-foererassistentsystem-fsd-supervised-er-foreloebigt-godkendt-i-danmark"
+      - id: mercado-belgica
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Bélgica"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-06-10"
+          fuente_tipo: registro
+          fuente: "Ministra flamenca de Movilidad Annick De Ridder (web de la ministra)"
+          enlace: "https://www.annickderidder.be/nieuws/vlaanderen-keurt-zelfrijdende-tesla-goed"
+      - id: mercado-eslovenia
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Eslovenia"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-09-07"
+          fuente_tipo: registro
+          fuente: "AVP (Agencia de Seguridad Vial de Eslovenia), nota del 2026-09-08"
+          enlace: "https://www.avp-rs.si/tesla-fsd-supervised-tudi-v-sloveniji-napredni-sistem-za-pomoc-vozniku-ne-avtonomna-voznja"
+      - id: mercado-chequia
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Chequia"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-09-21"
+          fuente_tipo: registro
+          fuente: "Ministerio de Transporte checo reconoce la aprobación provisional"
+          enlace: "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system"
+      - id: homologacion-ue
+        texto: "Homologación de FSD (Supervised) a escala de la UE"
+        etiqueta: R
+        cumplido: null
+    requeridos: []
+    promesas:   # promesas sobre autorizacion fuera de Norteamerica (sobre todo Europa)
+      - declarada: "2022-08-29"
+        paso: mercado-paises-bajos
+        fecha_prometida: "2022"
+        fuente_tipo: musk
+        fuente: "Musk en Stavanger (Euronews)"
+        enlace: "https://www.euronews.com/next/2022/08/29/tesla-musk"
+        cita: "wide release in the United States and possibly in Europe"
+      - declarada: "2024-07-23"
+        paso: mercado-paises-bajos
+        fecha_prometida: "2024"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2024 (transcripción Motley Fool): Europa y China"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/07/24/tesla-tsla-q2-2024-earnings-call-transcript/"
+        cita: "I think we're likely to receive that before the end of the year"
+      - declarada: "2024-09-05"
+        paso: mercado-paises-bajos
+        fecha_prometida: "2025-Q1"
+        fuente_tipo: oficial
+        fuente: "Hoja de ruta de la cuenta Tesla AI en X, recogida por Euronews: Europa y China"
+        enlace: "https://www.euronews.com/next/2024/09/05/tesla-says-full-self-driving-car-expected-in-europe-early-next-year-pending-regulatory-app"
+      - declarada: "2025-01-29"
+        paso: mercado-paises-bajos
+        fecha_prometida: "2025"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2024 Update: FSD (Supervised) en Europa y China"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+        cita: "launching FSD (Supervised) in Europe and China in 2025"
+      - declarada: "2026-01-22"
+        paso: mercado-paises-bajos
+        fecha_prometida: "2026-02"
+        fuente_tipo: musk
+        fuente: "Musk en Davos (Reuters vía Yahoo Finance)"
+        enlace: "https://finance.yahoo.com/news/davos-musk-expects-europe-china-161143758.html"
+        cita: "approval in Europe, hopefully next month"
+      - declarada: "2026-04-22"
+        paso: homologacion-ue
+        fecha_prometida: "2026-Q2"
+        fuente_tipo: oficial
+        fuente: "CFO Vaibhav Taneja, llamada Q1 2026 (StockAnalysis): aprobación en toda la UE"
+        enlace: "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/"
+        cita: "an EU-wide approval later in Q2"
+    estancado: null
+
+  - id: automovil
+    prioridad: 4
+    titulo: "Recuperación del beneficio del automóvil"
+    que_debe_ocurrir: "Sostener entregas y mejorar precios, costes y margen operativo durante varios trimestres."
+    que_demostraria: "Es el hito menos espectacular, pero afecta al negocio que hoy financia las inversiones. En el segundo trimestre Tesla entregó 480.126 vehículos y declaró 398 millones de dólares de beneficio operativo sobre 28.240 millones de ingresos. Más volumen solo crearía valor de forma duradera si se traduce en más beneficio y caja."
+    pasos: []
+    requeridos: []
+    estancado: null
+
+  - id: energia
+    prioridad: 5
+    titulo: "Energía a mayor escala"
+    que_debe_ocurrir: "Poner en marcha la nueva fábrica de Texas y aumentar entregas rentables de Megapack 3 y Megablock."
+    que_demostraria: "Es un negocio existente con una ampliación concreta pendiente. Tesla indicó que esperaba iniciar allí producción en 2026; ya desplegó 22,3 GWh de almacenamiento en el primer semestre. Hay que vigilar el margen además de los GWh, porque los proyectos pueden desplazar ingresos entre trimestres."
+    pasos:
+      - id: inicio-produccion-megafactory-texas
+        texto: "Inicio de producción en la Megafactory de Texas (Megapack 3 / Megablock)"
+        etiqueta: R
+        cumplido:
+          fecha: "2026-08-06"
+          fuente_tipo: oficial
+          fuente: "Cuenta Tesla Megapack en X: Megapack 3 sale de la línea en Brookshire, Texas"
+          enlace: "https://x.com/Tesla_Megapack/status/2085163367506059461"
+    requeridos: [inicio-produccion-megafactory-texas]
+    promesas:
+      - declarada: "2025-10-22"
+        paso: inicio-produccion-megafactory-texas
+        fecha_prometida: "2026"
+        fuente_tipo: oficial
+        fuente: "Tesla Q3 2025 Update: Megapack 3 en Megafactory Houston"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+        cita: "Megapack 3 production will begin at Megafactory Houston in 2026"
+    estancado: null
+
+  - id: semi
+    prioridad: 6
+    titulo: "Tesla Semi en serie"
+    que_debe_ocurrir: "Pasar de las unidades actuales al arranque y aumento sostenido de producción en Nevada, con pedidos, entregas y economía por camión observables."
+    que_demostraria: "Añadiría una categoría de vehículos, aunque probablemente pesa menos en la valoración que Robotaxi, Optimus o el negocio principal. Tesla mantenía el objetivo de iniciar producción en la nueva planta durante 2026."
+    pasos:
+      - id: inicio-produccion-nevada
+        texto: "Inicio de producción en la planta de Nevada"
+        etiqueta: R
+        # Decision del usuario: manda el Q2 2026 Update (2026-07-22: "Commissioning").
+        nota: "Indicio: el 2026-04-29 la cuenta Tesla Semi en X publicó «First Semi off high volume line», pero el Q2 2026 Update (2026-07-22) aún lista Nevada en «Commissioning»."
+        cumplido: null
+      - id: aumento-sostenido-produccion
+        texto: "Aumento sostenido de producción, con volumen comunicado"
+        etiqueta: R
+        cumplido: null
+      - id: entregas-clientes-externos
+        texto: "Entregas a clientes externos observables"
+        etiqueta: R
+        cumplido: null
+      - id: economia-por-camion
+        texto: "Economía por camión comunicada"
+        etiqueta: R
+        cumplido: null
+    requeridos: [inicio-produccion-nevada, aumento-sostenido-produccion, entregas-clientes-externos]
+    promesas:   # solo planta de Nevada (2017-2022: historial semi-primeras-entregas)
+      - declarada: "2024-07-23"
+        paso: inicio-produccion-nevada
+        fecha_prometida: "2025"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2024 Update: fábrica del Semi en Nevada"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828024032603/exhibit.htm"
+        cita: "on track to begin production by end of 2025"
+      - declarada: "2025-07-23"
+        paso: inicio-produccion-nevada
+        fecha_prometida: "2026"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2025 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035738/exhibit991.htm"
+        cita: "Semi and Cybercab, both slated for volume production in 2026"
+      - declarada: "2026-01-28"
+        paso: inicio-produccion-nevada
+        fecha_prometida: "2026-Q2"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2025 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+        cita: "production ramps of Tesla Semi and Cybercab, both commencing 1H26"
+    estancado: null
+
+historial:
+  - id: model3-5000-semana
+    titulo: "Model 3: 5.000 unidades por semana"
+    criterio: "Tesla comunica que la producción de Model 3 alcanzó un ritmo de 5.000 unidades por semana."
+    promesas:
+      - declarada: "2017-05-03"
+        fecha_prometida: "2017"
+        fuente_tipo: oficial
+        fuente: "Tesla Q1 2017 Update Letter"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459017008395/tsla-ex991_148.htm"
+        cita: "5,000 vehicles per week at some point in 2017"
+      - declarada: "2017-11-01"
+        fecha_prometida: "2018-Q1"
+        fuente_tipo: oficial
+        fuente: "Tesla Q3 2017 Update Letter"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459017020822/tsla-ex991_6.htm"
+        cita: "5,000 Model 3 vehicles per week by late Q1 2018"
+      - declarada: "2018-02-07"
+        fecha_prometida: "2018-Q2"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2017 Update Letter"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459018001521/tsla-ex991_8.htm"
+        cita: "2,500 by the end of Q1 and 5,000 by the end of Q2"
+    estado: cumplido
+    cumplimiento:
+      fecha: "2018-07-02"
+      fuente_tipo: oficial
+      fuente: "Tesla, producción y entregas del 2T 2018"
+      enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459018016465/tsla-ex991_6.htm"
+
+  - id: semi-primeras-entregas
+    titulo: "Tesla Semi: primeras entregas"
+    criterio: "Tesla comunica la producción inicial y las primeras entregas del Semi a un cliente externo."
+    promesas:
+      - declarada: "2017-11-16"
+        fecha_prometida: "2019"
+        fuente_tipo: musk
+        fuente: "Musk, presentación del Semi (CBS News)"
+        enlace: "https://www.cbsnews.com/news/tesla-semi-truck-introduced-in-detroit/"
+        cita: "production will begin in 2019"
+      - declarada: "2020-01-29"
+        fecha_prometida: "2020"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2019 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459020002489/tsla-ex991_340.htm"
+        cita: "We are planning to produce limited volumes of Tesla Semi this year"
+      - declarada: "2020-04-29"
+        fecha_prometida: "2021"
+        fuente_tipo: oficial
+        fuente: "Tesla Q1 2020 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459020019776/tsla-ex9901_96.htm"
+        cita: "we are shifting our first Tesla Semi deliveries to 2021"
+      - declarada: "2021-07-26"
+        fecha_prometida: "2022"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2021 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000156459021037953/tsla-ex991_89.htm"
+        cita: "we have shifted the launch of the Semi truck program to 2022"
+    estado: cumplido
+    cumplimiento:
+      fecha: "2023-01-31"
+      fuente_tipo: oficial
+      fuente: "Tesla Form 10-K 2022: «In December 2022, we began early production and deliveries of the Tesla Semi»"
+      enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+
+  - id: cybertruck-produccion
+    titulo: "Cybertruck: inicio de producción y primeras entregas"
+    criterio: "Tesla comunica el inicio de la producción del Cybertruck y las primeras entregas a clientes."
+    promesas:
+      - declarada: "2019-11-21"
+        fecha_prometida: "2021-Q4"
+        fuente_tipo: musk
+        fuente: "Musk, presentación del Cybertruck (Al Jazeera)"
+        enlace: "https://www.aljazeera.com/economy/2019/11/22/cardboard-box-or-bond-mobile-teslas-cybertruck-divides-opinion"
+        cita: "production is expected to begin in late 2021"
+      - declarada: "2021-08-09"
+        fecha_prometida: "2022"
+        fuente_tipo: oficial
+        fuente: "Web de Tesla actualizada: producción en 2022 (Not a Tesla App)"
+        enlace: "https://www.notateslaapp.com/news/544/tesla-cybertruck-release-date-delayed-to-2022"
+      - declarada: "2022-04-07"
+        fecha_prometida: "2023"
+        fuente_tipo: musk
+        fuente: "Musk, Cyber Rodeo (The Drive)"
+        enlace: "https://www.thedrive.com/news/45134/elon-musk-says-tesla-cybertruck-roadster-optimus-robot-production-should-start-in-2023"
+        cita: "should be in production in 2023"
+      - declarada: "2023-07-19"
+        fecha_prometida: "2023"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2023 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000095017023033544/tsla-ex99_1.htm"
+        cita: "Cybertruck remains on track to begin initial production later this year"
+    estado: cumplido
+    cumplimiento:
+      fecha: "2024-01-24"
+      fuente_tipo: oficial
+      fuente: "Tesla Q4 2023 Update: inicio de producción y primeras unidades entregadas"
+      enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000095017024007073/tsla-ex99_1.htm"
+
+  - id: roadster-produccion
+    titulo: "Nuevo Roadster: inicio de producción"
+    criterio: "Tesla comunica el inicio de la producción del Roadster de segunda generación para clientes."
+    promesas:
+      - declarada: "2017-11-16"
+        fecha_prometida: "2020"
+        fuente_tipo: musk
+        fuente: "Musk, presentación del Semi y el Roadster (CBS News)"
+        enlace: "https://www.cbsnews.com/news/tesla-semi-truck-introduced-in-detroit/"
+      - declarada: "2022-04-07"
+        fecha_prometida: "2023"
+        fuente_tipo: musk
+        fuente: "Musk, Cyber Rodeo (The Drive)"
+        enlace: "https://www.thedrive.com/news/45134/elon-musk-says-tesla-cybertruck-roadster-optimus-robot-production-should-start-in-2023"
+      - declarada: "2024-02-28"
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk en X (Fortune)"
+        enlace: "https://fortune.com/2024/02/28/elon-musk-tesla-roadster-unveiling-acceleration-production-market-launch-release-date/"
+        cita: "Unveil end of year, aiming to ship next year"
+      - declarada: "2025-11-06"
+        fecha_prometida: "2027-Q2"
+        fuente_tipo: musk
+        fuente: "Musk, junta de accionistas 2025 (Drive Tesla Canada): producción en el primer semestre de 2027"
+        enlace: "https://driveteslacanada.ca/news/tesla-pushes-roadster-unveil-and-demo-to-april-2026-production-now-slated-for-2027/"
+    estado: vigente
+    cumplimiento: null
+
+  - id: coche-25000
+    titulo: "Coche eléctrico de 25.000 dólares"
+    criterio: "Tesla pone a la venta un vehículo eléctrico de conducción convencional con precio base de 25.000 dólares o menos."
+    promesas:
+      - declarada: "2020-09-22"
+        fecha_prometida: "2023"
+        fuente_tipo: musk
+        fuente: "Musk, Battery Day (Engadget): coche de 25.000 dólares en unos tres años"
+        enlace: "https://www.engadget.com/tesla-battery-day-25k-ev-231307638.html"
+    estado: abandonado
+    cumplimiento: null
+    nota: "Abandono: Musk, llamada de resultados Q3 2024 (2024-10-23): «having a regular US$25k model is pointless» (paultan.org, 2024-10-28: https://paultan.org/2024/10/28/sub-us25k-tesla-model-is-pointless-elon-musk/)."
+
+  - id: modelos-asequibles
+    titulo: "Nuevos modelos más asequibles"
+    criterio: "Tesla comunica el lanzamiento comercial (venta a clientes) de los nuevos modelos «más asequibles» anunciados en 2024."
+    promesas:
+      - declarada: "2024-07-23"
+        fecha_prometida: "2025-Q2"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2024 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828024032603/exhibit.htm"
+        cita: "remain on track for start of production in the first half of 2025"
+      - declarada: "2025-07-23"
+        fecha_prometida: "2025"
+        fuente_tipo: oficial
+        fuente: "Tesla Q2 2025 Update: primeras unidades en junio, producción en volumen en 2S 2025"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035738/exhibit991.htm"
+        cita: "volume production planned for the second half of 2025"
+    estado: cumplido
+    cumplimiento:
+      fecha: "2025-10-22"
+      fuente_tipo: oficial
+      fuente: "Tesla Q3 2025 Update: Model 3 y Model Y Standard, «our most affordable vehicles»"
+      enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+
+  - id: fsd-sin-supervision-particulares
+    titulo: "FSD sin supervisión para clientes particulares"
+    criterio: "Tesla permite a clientes particulares usar FSD sin que el conductor tenga que vigilar, en al menos una jurisdicción."
+    promesas:
+      - declarada: "2015-12-21"
+        fecha_prometida: "2017"
+        fuente_tipo: musk
+        fuente: "Musk, entrevista en Fortune"
+        enlace: "https://fortune.com/2015/12/21/elon-musk-interview/"
+        cita: "complete autonomy in approximately two years"
+      - declarada: "2019-04-22"
+        fecha_prometida: "2020-06"
+        fuente_tipo: musk
+        fuente: "Musk, Autonomy Day (TechCrunch): software a mediados de 2020"
+        enlace: "https://techcrunch.com/2019/04/22/tesla-plans-to-launch-a-robotaxi-network-in-2020/"
+        cita: "no one needs to pay attention"
+      - declarada: "2024-07-23"
+        fecha_prometida: "2024"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2024 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/07/24/tesla-tsla-q2-2024-earnings-call-transcript/"
+        cita: "you could do unsupervised possibly by the end of this year"
+      - declarada: "2025-01-29"
+        fecha_prometida: "2025"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2024 Update: opción de FSD sin supervisión para clientes"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+        cita: "begin launching later this year in parts of the U.S."
+      - declarada: "2025-07-23"
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2025/07/23/tesla-tsla-q2-2025-earnings-call-transcript/"
+        cita: "available for unsupervised personal use by the end of this year"
+    estado: vigente
+    cumplimiento: null
+
+  - id: cybercab-produccion
+    titulo: "Cybercab: inicio de producción"
+    criterio: "Tesla comunica que la primera unidad de producción del Cybercab ha salido de la línea."
+    promesas:
+      - declarada: "2024-10-10"
+        fecha_prometida: "2026"
+        fuente_tipo: musk
+        fuente: "Musk, evento We, Robot (TechCrunch)"
+        enlace: "https://techcrunch.com/2024/10/10/tesla-reveals-20-cybercabs-at-we-robot-event/"
+      - declarada: "2025-01-29"
+        fecha_prometida: "2026"
+        fuente_tipo: oficial
+        fuente: "Tesla Q4 2024 Update"
+        enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+        cita: "volume production planned for 2026"
+      - declarada: "2025-10-22"
+        fecha_prometida: "2026-Q2"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q3 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2025/10/22/tesla-tsla-q3-2025-earnings-call-transcript/"
+        cita: "starts production in Q2 next year"
+      - declarada: "2026-01-28"
+        fecha_prometida: "2026-04"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q4 2025 (transcripción Motley Fool)"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2026/01/28/tesla-tsla-q4-2025-earnings-call-transcript/"
+        cita: "We expect to start production in April"
+    estado: cumplido
+    cumplimiento:
+      fecha: "2026-02-17"
+      fuente_tipo: oficial
+      fuente: "Post de Tesla en X: «First Cybercab off the production line at Giga Texas»"
+      enlace: "https://x.com/Tesla/status/2023824823747834197"
+
+  - id: optimus-venta-externa
+    titulo: "Optimus: venta a clientes externos"
+    criterio: "Tesla entrega o vende robots Optimus a un cliente externo que paga."
+    promesas:
+      - declarada: "2024-04-23"
+        fecha_prometida: "2025"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q1 2024 (transcripción Motley Fool): venta a terceros"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/04/23/tesla-tsla-q1-2024-earnings-call-transcript/"
+        cita: "we may be able to sell it externally by the end of next year"
+      - declarada: "2024-07-23"
+        fecha_prometida: "2026"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q2 2024 (transcripción Motley Fool): venta a terceros"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2024/07/24/tesla-tsla-q2-2024-earnings-call-transcript/"
+        cita: "we'll be providing Optimus robots to outside customers"
+      - declarada: "2026-01-22"
+        fecha_prometida: "2027"
+        fuente_tipo: musk
+        fuente: "Musk en Davos (Fox Business): venta al público"
+        enlace: "https://www.foxbusiness.com/economy/elon-musk-says-tesla-likely-sell-humanoid-robots-end-next-year"
+        cita: "By the end of next year, I think we'll be selling humanoid robots"
+    estado: vigente
+    cumplimiento: null
+
+transversal:
+  capex_guia:
+    anio: 2026
+    importe: 25000000000
+    texto: "más de 25.000 millones"
+    fuente_tipo: oficial
+    fuente: "Tesla Form 10-Q Q2 2026 (MD&A); ya en el 10-Q Q1 2026"
+    enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+  seguridad:
+    - id: nhtsa-ea26002-fsd-visibilidad
+      texto: "NHTSA: colisiones con FSD en condiciones de visibilidad reducida (PE24031, elevada a Engineering Analysis EA26002; ~3,2 millones de vehículos)"
+      abierta_desde: "2024-10-17"
+      estado: "abierta: Engineering Analysis EA26002 desde 2026-03-18"
+      fuente: "NHTSA ODI, resumen de apertura de EA26002"
+      enlace: "https://static.nhtsa.gov/odi/inv/2026/INOA-EA26002-10023.pdf"
+    - id: nhtsa-pe25012-fsd-infracciones
+      texto: "NHTSA: infracciones de tráfico con FSD activado (semáforos en rojo, sentido contrario; ~2,88 millones de vehículos)"
+      abierta_desde: "2025-10-07"
+      estado: "abierta: Preliminary Evaluation PE25012"
+      fuente: "NHTSA ODI, resumen de apertura de PE25012"
+      enlace: "https://static.nhtsa.gov/odi/inv/2025/INOA-PE25012-19171.pdf"
+    - id: nhtsa-aq26002-cybercab
+      texto: "NHTSA: auditoría de la autocertificación FMVSS del Cybercab (sin volante ni pedales; ~1.000 vehículos)"
+      abierta_desde: "2026-09-03"
+      estado: "abierta: Audit Query AQ26002"
+      fuente: "NHTSA ODI, resumen de apertura de AQ26002"
+      enlace: "https://static.nhtsa.gov/odi/inv/2026/INOA-AQ26002-17078.pdf"

@@ -1,0 +1,64 @@
+# Supuestos de valoracion de Tesla. Se revisan una vez por trimestre, tras los
+# resultados. Cambiar cualquier cifra exige cambiar "version": el motor se
+# detiene si los supuestos cambian con la misma version.
+# Justificacion de cada cifra: docs/metodologia-valoracion.md
+version: "2026-09-23"
+
+comun:
+  horizonte_anios: 10
+  prima_riesgo_mercado: 0.05          # prima de riesgo del mercado de EE.UU.
+  meses_beta: 60                      # cinco anios de rentabilidades mensuales
+  coste_deuda_antes_impuestos: 0.06
+  tipo_impositivo: 0.21               # tipo federal de EE.UU., normalizado
+  crecimiento_terminal: 0.03          # por debajo del tipo sin riesgo (4,96%)
+  roic_terminal: 0.15
+  reparto_id_automocion: 0.85         # el resto de la I+D, a energia
+
+escenarios:
+  bear:
+    automocion:
+      crecimiento_inicial: 0.00
+      crecimiento_final: 0.02
+      margen_bruto_final: 0.15
+      ventas_sobre_capital: 2.3
+      ajuste_wacc: 0.0
+    energia:
+      crecimiento_inicial: 0.15
+      crecimiento_final: 0.03
+      margen_bruto_final: 0.22
+      ventas_sobre_capital: 2.5
+      ajuste_wacc: 0.0
+    id_sobre_ingresos_final: 0.075
+    sga_sobre_ingresos_final: 0.065
+
+  base:
+    automocion:
+      crecimiento_inicial: 0.08
+      crecimiento_final: 0.03
+      margen_bruto_final: 0.19
+      ventas_sobre_capital: 2.5
+      ajuste_wacc: 0.0
+    energia:
+      crecimiento_inicial: 0.30
+      crecimiento_final: 0.05
+      margen_bruto_final: 0.28
+      ventas_sobre_capital: 3.0
+      ajuste_wacc: 0.0
+    id_sobre_ingresos_final: 0.06
+    sga_sobre_ingresos_final: 0.05
+
+  bull:
+    automocion:
+      crecimiento_inicial: 0.15
+      crecimiento_final: 0.04
+      margen_bruto_final: 0.23
+      ventas_sobre_capital: 2.7
+      ajuste_wacc: 0.0
+    energia:
+      crecimiento_inicial: 0.45
+      crecimiento_final: 0.06
+      margen_bruto_final: 0.32
+      ventas_sobre_capital: 3.5
+      ajuste_wacc: 0.0
+    id_sobre_ingresos_final: 0.05
+    sga_sobre_ingresos_final: 0.045

@@ -1,0 +1,155 @@
+<title>Valoración TSLA</title>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+<style>/*__ESTILOS__*/</style>
+
+<div class="pagina">
+  <header class="cabecera" id="resumen">
+    <div class="titulo">
+      <h1>Tesla: precio frente a valor</h1>
+      <p class="nota" id="r-version"></p>
+    </div>
+    <div class="cifras">
+      <div class="cifra"><span class="rotulo">Precio <span class="etiqueta" title="Reportado">R</span></span><span class="valor" id="r-precio"></span><span class="nota" id="r-mes-precio"></span></div>
+      <div class="cifra destacada"><span class="rotulo">Valor base por acción <span class="etiqueta" title="Derivado">D</span></span><span class="valor" id="r-valor-base"></span><span class="nota">Bear <span id="r-bear"></span> · Bull <span id="r-bull"></span></span></div>
+      <div class="cifra"><span class="rotulo">Precio frente a valor base <span class="etiqueta" title="Derivado">D</span></span><span class="valor" id="r-pfv"></span><span class="nota">Positivo: el precio está por encima del valor</span></div>
+      <div class="cifra"><span class="rotulo">Opcionalidad implícita <span class="etiqueta" title="Derivado">D</span></span><span class="valor" id="r-opcionalidad"></span><span class="nota" id="r-opcionalidad-pct"></span></div>
+      <div class="cifra"><span class="rotulo">Crecimiento implícito <span class="etiqueta" title="Derivado">D</span></span><span class="valor" id="r-crecimiento"></span><span class="nota" id="r-crecimiento-nota"></span></div>
+    </div>
+    <p class="aviso">Herramienta analítica basada en supuestos propios. No es asesoramiento de inversión.</p>
+  </header>
+
+  <nav class="navegacion" aria-label="Secciones">
+    <a href="#volumenes">Volúmenes</a><a href="#energia">Energía</a><a href="#fsd">Software y FSD</a><a href="#financieros">Financieros</a><a href="#valoracion">Valoración</a><a href="#hitos">Hitos</a><a href="#simulador">Simulador</a><a href="#fuentes">Fuentes</a>
+  </nav>
+
+  <section id="volumenes" class="seccion">
+    <h2>Volúmenes y producto</h2>
+    <div class="rejilla-graficos">
+      <figure class="grafico"><figcaption>Entregas por línea y producción <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-entregas" aria-label="Entregas trimestrales por línea y producción total"></canvas></div><p class="nota" id="n-etiquetas"></p></figure>
+      <figure class="grafico"><figcaption>Días de inventario y producción frente a entregas <span class="etiqueta" title="Reportado">R</span> <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-inventario" aria-label="Días de inventario y ratio producción entre entregas"></canvas></div></figure>
+      <figure class="grafico"><figcaption>ASP implícito y coste por vehículo <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-unitario" aria-label="Precio medio y coste por vehículo"></canvas></div><p class="nota">Aproximado: las entregas incluyen vehículos en leasing y el coste incluye servicios.</p></figure>
+    </div>
+  </section>
+
+  <section id="energia" class="seccion">
+    <h2>Energía</h2>
+    <div class="rejilla-graficos">
+      <figure class="grafico"><figcaption>Almacenamiento desplegado <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-almacenamiento" aria-label="GWh desplegados por trimestre"></canvas></div></figure>
+      <figure class="grafico"><figcaption>Ingresos y margen bruto del segmento <span class="etiqueta" title="Reportado">R</span> <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-energia" aria-label="Ingresos y margen de energía"></canvas></div></figure>
+    </div>
+  </section>
+
+  <section id="fsd" class="seccion">
+    <h2>Software y FSD</h2>
+    <div class="rejilla-graficos">
+      <figure class="grafico"><figcaption>Suscripciones activas de FSD <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-fsd" aria-label="Suscripciones activas de FSD"></canvas></div><p class="nota">Tesla las publica desde 2024Q4.</p></figure>
+      <figure class="grafico"><figcaption>Deferred revenue <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-diferidos" aria-label="Deferred revenue corriente y no corriente"></canvas></div></figure>
+    </div>
+  </section>
+
+  <section id="financieros" class="seccion">
+    <h2>Financieros</h2>
+    <div class="rejilla-graficos">
+      <figure class="grafico"><figcaption>Ingresos por línea de producto <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-lineas" aria-label="Ingresos por línea de producto"></canvas></div><p class="nota" id="n-lineas"></p></figure>
+      <figure class="grafico"><figcaption>Ingresos por región <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-regiones" aria-label="Ingresos por región"></canvas></div></figure>
+      <figure class="grafico"><figcaption>Márgenes <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-margenes" aria-label="Márgenes"></canvas></div></figure>
+      <figure class="grafico"><figcaption>Flujo de caja libre y capex <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-caja" aria-label="FCF y capex"></canvas></div></figure>
+      <figure class="grafico"><figcaption>Acciones en circulación <span class="etiqueta" title="Reportado">R</span></figcaption><div class="lienzo"><canvas role="img" id="g-acciones" aria-label="Acciones en circulación"></canvas></div></figure>
+    </div>
+  </section>
+
+  <section id="valoracion" class="seccion">
+    <h2>Valoración y mercado</h2>
+    <div class="rejilla-graficos">
+      <figure class="grafico"><figcaption>Precio frente a valor <span class="etiqueta" title="Reportado">R</span> <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-historico" aria-label="Precio y valor por acción en cada actualización mensual"></canvas></div><p class="nota" id="n-historico"></p></figure>
+      <figure class="grafico"><figcaption>Valor de cada unidad por escenario <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo"><canvas role="img" id="g-sotp" aria-label="Valor de automoción y energía por escenario"></canvas></div><p class="nota" id="n-coste-capital"></p></figure>
+      <figure class="grafico"><figcaption>Múltiplo frente a su histórico <span class="etiqueta" title="Derivado">D</span></figcaption>
+        <label class="selector" for="sel-multiplo">Múltiplo <select id="sel-multiplo"><option value="ev_ventas">EV/Ventas</option><option value="per">PER</option><option value="ev_ebitda">EV/EBITDA</option><option value="p_fcf">P/FCF</option></select></label>
+        <div class="lienzo"><canvas role="img" id="g-multiplo" aria-label="Múltiplo mensual y su mediana"></canvas></div></figure>
+    </div>
+    <div class="tablas">
+      <div class="bloque-tabla"><h3>Valor por acción según crecimiento y margen <span class="etiqueta" title="Derivado">D</span></h3><p class="nota" id="n-rejilla"></p><div class="desplazable"><table id="t-rejilla" class="rejilla"></table></div></div>
+      <div class="bloque-tabla"><h3>Múltiplos <span class="etiqueta" title="Derivado">D</span></h3><div class="desplazable"><table id="t-multiplos"></table></div></div>
+      <div class="bloque-tabla"><h3>Sensibilidad del valor base <span class="etiqueta" title="Derivado">D</span></h3><div class="desplazable"><table id="t-sensibilidad"></table></div></div>
+      <div class="bloque-tabla"><h3>Retorno en EUR <span class="etiqueta" title="Derivado">D</span></h3><div class="desplazable"><table id="t-retorno"></table></div><p class="nota">Efecto divisa: lo que el euro ha ganado o perdido frente al dólar. (1 + retorno en EUR) = (1 + retorno en USD) × (1 + efecto divisa).</p></div>
+    </div>
+  </section>
+
+  <section id="hitos" class="seccion">
+    <div class="titulo">
+      <h2>Hitos</h2>
+      <p class="nota" id="n-hitos-version"></p>
+    </div>
+    <div class="cifras" id="hitos-resumen"></div>
+    <div class="tarjetas-hitos" id="hitos-tarjetas"></div>
+    <div class="transversal" id="hitos-transversal"></div>
+    <div class="historial-hitos" id="hitos-historial">
+      <figure class="grafico"><figcaption>Historial de promesas <span class="etiqueta" title="Derivado">D</span></figcaption><div class="lienzo" id="lienzo-historial"><canvas role="img" id="g-historial" aria-label="Cada hito, desde la primera fecha prometida hasta el cumplimiento o hoy, con una marca en cada fecha prometida"></canvas></div><p class="nota">Cada barra va de la primera fecha prometida al cumplimiento, a hoy o, si se abandonó, a la última fecha prometida. Verde: cumplido. Rojo: retrasado. Gris claro con borde discontinuo: en plazo o cumplido antes de la primera fecha (la barra va hacia atrás). Gris oscuro: abandonado. Los puntos son las fechas prometidas en cada re-promesa.</p></figure>
+      <div class="bloque-tabla"><h3>Promesas y retrasos <span class="etiqueta" title="Derivado">D</span></h3><div class="desplazable"><table id="t-historial"></table></div><p class="nota">Una fecha vaga («2026», «2026-Q2») se lee como el último día de su periodo, la lectura más favorable para Tesla.</p></div>
+    </div>
+    <p class="aviso">Las fechas son objetivos comunicados por Tesla o por Musk, no garantías de que esos negocios alcancen escala rentable.</p>
+  </section>
+
+  <section id="simulador" class="seccion">
+    <h2>Simulador de supuestos</h2>
+    <p class="aviso">Exploración, no oficial. No cambia la valoración ni los supuestos congelados.</p>
+    <p class="verificacion" id="verificacion" role="status"></p>
+    <div class="simulador">
+      <form class="controles" id="sim-controles">
+        <label class="selector" for="sim-escenario">Partir del escenario <select id="sim-escenario"><option value="bear">Bear</option><option value="base" selected>Base</option><option value="bull">Bull</option></select></label>
+        <fieldset><legend>Automoción</legend><div id="sim-automocion"></div></fieldset>
+        <fieldset><legend>Energía</legend><div id="sim-energia"></div></fieldset>
+        <fieldset><legend>Gastos operativos</legend><div id="sim-gastos"></div></fieldset>
+        <fieldset><legend>Comunes y coste de capital</legend><div id="sim-comun"></div></fieldset>
+        <div class="botones"><button type="button" id="sim-restablecer">Volver al escenario oficial</button><button type="button" id="sim-copiar">Copiar como YAML</button></div>
+        <p class="nota" id="sim-copiado" role="status"></p>
+        <textarea id="sim-yaml" rows="12" hidden aria-label="Supuestos en YAML"></textarea>
+      </form>
+      <div class="resultados" id="sim-resultado">
+        <div id="sim-cifras">
+          <div class="cifra destacada"><span class="rotulo">Valor por acción</span><span class="valor" id="sim-vpa" aria-live="polite"></span><span class="nota" id="sim-dif"></span></div>
+          <dl class="pares">
+            <dt>Precio frente a valor</dt><dd id="sim-pfv"></dd>
+            <dt>Opcionalidad implícita</dt><dd id="sim-opcionalidad"></dd>
+            <dt>Valor de automoción</dt><dd id="sim-v-auto"></dd>
+            <dt>Valor de energía</dt><dd id="sim-v-energia"></dd>
+            <dt>Crecimiento implícito</dt><dd id="sim-g"></dd>
+          </dl>
+        </div>
+        <p class="alerta-texto" id="sim-motivo" aria-live="polite" hidden></p>
+      </div>
+      <div class="explicacion" id="sim-explicacion">
+        <section class="caja" aria-labelledby="t-desglose">
+          <div class="caja-cabecera"><h3 id="t-desglose">Cómo se llega al valor por acción</h3>
+            <label class="selector" for="sim-desglose-unidad">Ver <select id="sim-desglose-unidad"><option value="total">Total</option><option value="automocion">Automoción</option><option value="energia">Energía</option></select></label></div>
+          <div class="lienzo lienzo-bajo"><canvas role="img" id="g-desglose" aria-label="Flujo libre de cada año y su valor presente"></canvas></div>
+          <ol class="pasos" id="sim-pasos"></ol>
+          <p class="nota formula" id="sim-formula"></p>
+        </section>
+        <section class="caja" aria-labelledby="t-anio-cero">
+          <h3 id="t-anio-cero">Flujo de caja libre del año cero</h3>
+          <div class="anio-cero">
+            <div><span class="rotulo">Reportado <span class="etiqueta" title="Reportado">R</span></span><span class="valor" id="sim-fcf-reportado"></span><span class="nota" id="sim-fcf-reportado-nota"></span></div>
+            <div><span class="rotulo">Del modelo <span class="etiqueta" title="Derivado">D</span></span><span class="valor" id="sim-fcf-modelo"></span><span class="nota" id="sim-fcf-modelo-nota"></span></div>
+          </div>
+          <p class="nota">El modelo mide la reinversión con la ratio ventas/capital, no con el capex y la amortización reales; por eso las dos cifras difieren.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section id="fuentes" class="seccion">
+    <h2>Fuentes y trazabilidad</h2>
+    <p class="nota">R: reportado por Tesla o un registro oficial. D: derivado por cálculo. E: estimado.</p>
+    <div class="desplazable"><table id="t-fuentes"></table></div>
+  </section>
+</div>
+
+<script id="datos" type="application/json">__DATOS__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<script>/*__MOTOR__*/</script>
+<script>/*__SIMULADOR__*/</script>
+<script>/*__APP__*/</script>

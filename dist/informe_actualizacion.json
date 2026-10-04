@@ -1,0 +1,77 @@
+{
+  "fecha": "2026-10-04",
+  "huella_datos": "c4f98f0314f209630159affcc9fba03fd73654676fbe7a12677ccac68b1e22e8",
+  "trimestres_nuevos": {
+    "financials_quarterly": [],
+    "operating_quarterly": [
+      "2026Q3"
+    ]
+  },
+  "revision_trimestral": false,
+  "reexpresiones": {
+    "financials_quarterly": [],
+    "operating_quarterly": [],
+    "market_monthly": []
+  },
+  "periodos_eliminados": {
+    "financials_quarterly": [],
+    "operating_quarterly": [],
+    "market_monthly": []
+  },
+  "columnas_nuevas": {
+    "financials_quarterly": [],
+    "operating_quarterly": [],
+    "market_monthly": []
+  },
+  "columnas_eliminadas": {
+    "financials_quarterly": [],
+    "operating_quarterly": [],
+    "market_monthly": []
+  },
+  "mercado": {
+    "meses_nuevos": [
+      "2026-10"
+    ],
+    "ultimo_mes": "2026-10",
+    "mes_anterior": "2026-09",
+    "precio": {
+      "antes": 354.81,
+      "despues": 370.59
+    },
+    "eurusd": {
+      "antes": 1.1355,
+      "despues": 1.1225
+    },
+    "rf_10y": {
+      "antes": 0.0529,
+      "despues": 0.0528
+    },
+    "mes_revisado": {
+      "mes": "2026-09",
+      "campos": [
+        {
+          "campo": "price_close",
+          "antes": 378.9,
+          "despues": 354.81
+        },
+        {
+          "campo": "spy_close",
+          "antes": 773.38,
+          "despues": 762.63
+        },
+        {
+          "campo": "rf_10y",
+          "antes": 0.0496,
+          "despues": 0.0529
+        },
+        {
+          "campo": "eurusd",
+          "antes": 1.1411,
+          "despues": 1.1355
+        }
+      ]
+    }
+  },
+  "avisos": [],
+  "version_supuestos_en_preparar": "2026-09-23"
+}
