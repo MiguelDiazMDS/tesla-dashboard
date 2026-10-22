@@ -3,7 +3,7 @@
 # Criterio de fuente_tipo: cartas, 10-Q/10-K, cuentas oficiales de Tesla y directivos
 # distintos de Musk -> oficial; declaraciones de Musk (llamadas, eventos, X) -> musk;
 # reguladores -> registro; prensa -> tercero.
-version: "2026-09-24"
+version: "2026-10-22"
 
 hitos:
   - id: robotaxi-escala
@@ -88,9 +88,11 @@ hitos:
       - id: inicio-produccion
         texto: "Inicio de producción"
         etiqueta: R
-        # Q2 2026 Update: lineas en instalacion, produccion "later this year". Motley Fool
-        # (2026-08-27) afirma que ya ha empezado, sin fuente primaria: no se marca.
-        cumplido: null
+        cumplido:
+          fecha: "2026-10-21"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2026 Update: «Optimus production began in Fremont on our high-volume lines»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
       - id: produccion-repetible
         texto: "Producción repetible, con volumen o ritmo comunicados"
         etiqueta: R
@@ -311,6 +313,26 @@ hitos:
           fuente_tipo: registro
           fuente: "Ministerio de Transporte checo reconoce la aprobación provisional"
           enlace: "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ceska-republika-uznala-prozatimni-schvaleni-system"
+      - id: mercado-croacia
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Croacia"
+        etiqueta: R
+        nota: "Según la prensa, la oficina croata de metrología (DZM) confirmó la aprobación el 2026-09-28; no se encontró su nota oficial."
+        cumplido:
+          fecha: "2026-10-21"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2026 Update: aprobaciones en Croacia, Eslovenia, Chequia y Eslovaquia"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      - id: mercado-eslovaquia
+        tipo: mercado
+        texto: "FSD (Supervised) autorizado en Eslovaquia"
+        etiqueta: R
+        nota: "Según la prensa, el Ministerio de Transporte eslovaco reconoció la aprobación neerlandesa el 2026-10-16; no se encontró su nota oficial."
+        cumplido:
+          fecha: "2026-10-21"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2026 Update: aprobaciones en Croacia, Eslovenia, Chequia y Eslovaquia"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
       - id: homologacion-ue
         texto: "Homologación de FSD (Supervised) a escala de la UE"
         etiqueta: R
@@ -358,6 +380,13 @@ hitos:
         fuente: "CFO Vaibhav Taneja, llamada Q1 2026 (StockAnalysis): aprobación en toda la UE"
         enlace: "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/"
         cita: "an EU-wide approval later in Q2"
+      - declarada: "2026-10-21"
+        paso: homologacion-ue
+        fecha_prometida: "2027-Q1"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): aprobación en toda la UE"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/"
+        cita: "I would be surprised if it takes longer than Q1"
     estancado: null
 
   - id: automovil
@@ -403,9 +432,11 @@ hitos:
       - id: inicio-produccion-nevada
         texto: "Inicio de producción en la planta de Nevada"
         etiqueta: R
-        # Decision del usuario: manda el Q2 2026 Update (2026-07-22: "Commissioning").
-        nota: "Indicio: el 2026-04-29 la cuenta Tesla Semi en X publicó «First Semi off high volume line», pero el Q2 2026 Update (2026-07-22) aún lista Nevada en «Commissioning»."
-        cumplido: null
+        cumplido:
+          fecha: "2026-10-21"
+          fuente_tipo: oficial
+          fuente: "Tesla Q3 2026 Update: «We began volume production of Tesla Semi»; Nevada pasa a «Production»"
+          enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
       - id: aumento-sostenido-produccion
         texto: "Aumento sostenido de producción, con volumen comunicado"
         etiqueta: R
@@ -699,17 +730,23 @@ historial:
         fuente: "Musk en Davos (Fox Business): venta al público"
         enlace: "https://www.foxbusiness.com/economy/elon-musk-says-tesla-likely-sell-humanoid-robots-end-next-year"
         cita: "By the end of next year, I think we'll be selling humanoid robots"
+      - declarada: "2026-10-21"
+        fecha_prometida: "2027"
+        fuente_tipo: musk
+        fuente: "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): entregas a empresas externas"
+        enlace: "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/"
+        cita: "I do expect these issues to be solved around the end of next year"
     estado: vigente
     cumplimiento: null
 
 transversal:
   capex_guia:
     anio: 2026
-    importe: 25000000000
-    texto: "más de 25.000 millones"
+    importe: 20000000000
+    texto: "más de 20.000 millones"
     fuente_tipo: oficial
-    fuente: "Tesla Form 10-Q Q2 2026 (MD&A); ya en el 10-Q Q1 2026"
-    enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    fuente: "Tesla Form 10-Q Q3 2026 (MD&A): «in excess of $20 billion»; antes, más de 25.000 millones (10-Q Q1 y Q2 2026)"
+    enlace: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
   seguridad:
     - id: nhtsa-ea26002-fsd-visibilidad
       texto: "NHTSA: colisiones con FSD en condiciones de visibilidad reducida (PE24031, elevada a Engineering Analysis EA26002; ~3,2 millones de vehículos)"

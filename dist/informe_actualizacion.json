@@ -1,16 +1,29 @@
 {
-  "fecha": "2026-10-04",
-  "huella_datos": "c4f98f0314f209630159affcc9fba03fd73654676fbe7a12677ccac68b1e22e8",
+  "fecha": "2026-10-22",
+  "huella_datos": "b66a6cd3a16f7e9813135f048001e3742ea4949ed410abe65a6bdf1642538631",
   "trimestres_nuevos": {
-    "financials_quarterly": [],
-    "operating_quarterly": [
+    "financials_quarterly": [
       "2026Q3"
-    ]
+    ],
+    "operating_quarterly": []
   },
-  "revision_trimestral": false,
+  "revision_trimestral": true,
   "reexpresiones": {
     "financials_quarterly": [],
-    "operating_quarterly": [],
+    "operating_quarterly": [
+      {
+        "periodo": "2026Q3",
+        "campo": "days_inventory",
+        "antes": null,
+        "despues": 11.0
+      },
+      {
+        "periodo": "2026Q3",
+        "campo": "fsd_subscriptions",
+        "antes": null,
+        "despues": 1740000.0
+      }
+    ],
     "market_monthly": []
   },
   "periodos_eliminados": {
@@ -29,45 +42,43 @@
     "market_monthly": []
   },
   "mercado": {
-    "meses_nuevos": [
-      "2026-10"
-    ],
+    "meses_nuevos": [],
     "ultimo_mes": "2026-10",
     "mes_anterior": "2026-09",
     "precio": {
       "antes": 354.81,
-      "despues": 370.59
+      "despues": 386.47
     },
     "eurusd": {
       "antes": 1.1355,
-      "despues": 1.1225
+      "despues": 1.1205
     },
     "rf_10y": {
       "antes": 0.0529,
-      "despues": 0.0528
+      "despues": 0.0513
     },
     "mes_revisado": {
-      "mes": "2026-09",
+      "mes": "2026-10",
       "campos": [
         {
           "campo": "price_close",
-          "antes": 378.9,
-          "despues": 354.81
+          "antes": 370.59,
+          "despues": 386.47
         },
         {
           "campo": "spy_close",
-          "antes": 773.38,
-          "despues": 762.63
+          "antes": 769.64,
+          "despues": 773.09
         },
         {
           "campo": "rf_10y",
-          "antes": 0.0496,
-          "despues": 0.0529
+          "antes": 0.0528,
+          "despues": 0.0513
         },
         {
           "campo": "eurusd",
-          "antes": 1.1411,
-          "despues": 1.1355
+          "antes": 1.1225,
+          "despues": 1.1205
         }
       ]
     }

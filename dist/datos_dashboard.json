@@ -1,53 +1,53 @@
 {
- "generado": "2026-10-04",
+ "generado": "2026-10-22",
  "valoracion": {
-  "fecha": "2026-10-04",
+  "fecha": "2026-10-22",
   "version_supuestos": "2026-09-23",
   "huella": "02f115965fa8c9d8",
-  "ttm_hasta": "2026Q2",
-  "precio": 370.59,
+  "ttm_hasta": "2026Q3",
+  "precio": 386.47,
   "mes_precio": "2026-10",
-  "precio_obtenido": "2026-10-04",
-  "capitalizacion": 1463459910000.0,
+  "precio_obtenido": "2026-10-22",
+  "capitalizacion": 1527715910000.0,
   "coste_capital": {
-   "tipo_sin_riesgo": 0.0528,
+   "tipo_sin_riesgo": 0.0513,
    "beta": 1.8792710152018637,
    "prima_riesgo": 0.05,
-   "coste_acciones": 0.14676355076009318,
-   "wacc": 0.14613328657799363
+   "coste_acciones": 0.14526355076009317,
+   "wacc": 0.14465729848022577
   },
   "escenarios": {
    "bear": {
-    "valor_por_accion": 13.315855383565923,
-    "valor_acciones": 52584312909.70183,
+    "valor_por_accion": 12.961114438743685,
+    "valor_acciones": 51235285376.35379,
     "valor_unidades": {
-     "automocion": 6093063213.025862,
-     "energia": 12309249696.675968
+     "automocion": 4143719500.782572,
+     "energia": 11167565875.571217
     },
-    "precio_frente_a_valor": 26.830731809942332
+    "precio_frente_a_valor": 28.817652010289663
    },
    "base": {
-    "valor_por_accion": 23.533246170189766,
-    "valor_acciones": 92932789126.07939,
+    "valor_por_accion": 23.014873140070517,
+    "valor_acciones": 90977793522.69875,
     "valor_unidades": {
-     "automocion": 23884493001.089252,
-     "energia": 34866296124.990135
+     "automocion": 22057150031.452633,
+     "energia": 32996643491.24611
     },
-    "precio_frente_a_valor": 14.747508750808755
+    "precio_frente_a_valor": 15.792184673272367
    },
    "bull": {
-    "valor_por_accion": 42.035158801331214,
-    "valor_acciones": 165996842106.45697,
+    "valor_por_accion": 41.30881835362436,
+    "valor_acciones": 163293758951.8771,
     "valor_unidades": {
-     "automocion": 55275410805.44379,
-     "energia": 76539431301.0132
+     "automocion": 53895124642.60666,
+     "energia": 73474634309.27045
     },
-    "precio_frente_a_valor": 7.81619126863543
+    "precio_frente_a_valor": 8.35562950969988
    }
   },
-  "opcionalidad_implicita": 1370527120873.9207,
+  "opcionalidad_implicita": 1436738116477.3013,
   "horizonte_anios": 10,
-  "crecimiento_implicito": 0.7354296875000002,
+  "crecimiento_implicito": 0.7421484375,
   "crecimiento_implicito_motivo": null,
   "rejilla": {
    "crecimientos": [
@@ -68,97 +68,97 @@
    ],
    "valor_por_accion": [
     [
-     15.610128872119276,
-     19.706283893036506,
-     23.802438913953736,
-     27.898593934870966,
-     30.970710200558887
+     15.216717519955463,
+     19.404119221324045,
+     23.591520922692627,
+     27.77892262406121,
+     30.919473900087645
     ],
     [
-     15.055080398834074,
-     21.17408804277235,
-     27.293095686710615,
-     33.41210333064889,
-     38.00135906360259
+     14.513747082148289,
+     20.773554208488815,
+     27.03336133482934,
+     33.29316846116987,
+     37.98802380592526
     ],
     [
-     14.311800109409427,
-     23.369581548040046,
-     32.42736298667067,
-     41.48514442530129,
-     48.278480504274256
+     13.592039852979712,
+     22.8639021276797,
+     32.13576440237969,
+     41.40762667707968,
+     48.36152338310468
     ],
     [
-     13.314777171088537,
-     26.591759775287255,
-     39.86874237948599,
-     53.1457249836847,
-     63.10346193683373
+     12.379101460098017,
+     25.976943978965075,
+     39.57478649783214,
+     53.172629016699204,
+     63.3710109058495
     ],
     [
-     11.977833111405092,
-     31.24249963704394,
-     50.507166162682786,
-     69.77183268832164,
-     84.22033258255077
+     10.78019832690543,
+     30.519155612114385,
+     50.25811289732335,
+     69.99707018253231,
+     84.801288146439
     ],
     [
-     10.188561055499674,
-     37.855689488774836,
-     65.52281792205,
-     93.18994635532513,
-     113.9402926802815
+     8.672473542355696,
+     37.03147923255743,
+     65.39048492275916,
+     93.7494906129609,
+     115.01874488061218
     ],
     [
-     4.630151607214925,
-     59.987176344937396,
-     115.34420108265994,
-     170.7012258203824,
-     212.21899437367435
+     2.254052450609357,
+     59.02972763993424,
+     115.80540282925911,
+     172.58107801858398,
+     215.1628344105777
     ]
    ]
   },
   "sensibilidad": {
    "wacc": {
-    "-2%": 28.06209359928634,
-    "+0%": 23.533246170189766,
-    "+2%": 20.44601403013008
+    "-2%": 27.543004896839427,
+    "+0%": 23.014873140070517,
+    "+2%": 19.955419299022108
    },
    "reparto_id_automocion": {
     "70%": {
-     "automocion": 33119269087.232243,
-     "energia": 25631520038.847145
+     "automocion": 31924987542.94391,
+     "energia": 23128805979.75484
     },
     "85%": {
-     "automocion": 23884493001.089252,
-     "energia": 34866296124.990135
+     "automocion": 22057150031.452633,
+     "energia": 32996643491.24611
     },
     "100%": {
-     "automocion": 14649716914.94627,
-     "energia": 44101072211.13312
+     "automocion": 12189312519.96136,
+     "energia": 42864481002.73738
     }
    }
   },
   "multiplos": {
    "ev_ventas": {
-    "actual": 13.79358911010529,
+    "actual": 14.403706768369219,
     "mediana": 11.530571516806763,
-    "percentil": 0.6296296296296297
+    "percentil": 0.6666666666666666
    },
    "per": {
-    "actual": 384.7160646687697,
+    "actual": 474.7408048477315,
     "mediana": 168.18756965548866,
-    "percentil": 0.7894736842105263
+    "percentil": 0.8421052631578947
    },
    "ev_ebitda": {
-    "actual": 131.74282514517466,
+    "actual": 146.68553687315634,
     "mediana": 83.66867682978187,
-    "percentil": 0.7777777777777778
+    "percentil": 0.9012345679012346
    },
    "p_fcf": {
-    "actual": 253.98471190558834,
+    "actual": 462.5237390251287,
     "mediana": 204.71723571428572,
-    "percentil": 0.7407407407407407
+    "percentil": 0.9753086419753086
    }
   },
   "serie_multiplos": [
@@ -964,13 +964,13 @@
    },
    {
     "month": "2026-10",
-    "ttm_hasta": "2026Q2",
-    "capitalizacion": 1463459910000.0,
-    "ev": 1429277910000.0,
-    "ev_ventas": 13.79358911010529,
-    "per": 384.7160646687697,
-    "ev_ebitda": 131.74282514517466,
-    "p_fcf": 253.98471190558834
+    "ttm_hasta": "2026Q3",
+    "capitalizacion": 1527715910000.0,
+    "ev": 1491791910000.0,
+    "ev_ventas": 14.403706768369219,
+    "per": 474.7408048477315,
+    "ev_ebitda": 146.68553687315634,
+    "p_fcf": 462.5237390251287
    }
   ]
  },
@@ -2333,42 +2333,42 @@
    "deliveries_nicho": 8295.0,
    "production_volumen": 457387.0,
    "production_nicho": 7004.0,
-   "days_inventory": null,
+   "days_inventory": 11.0,
    "storage_deployed_gwh": 13.7,
-   "fsd_subscriptions": null,
-   "revenue_total": null,
-   "revenue_auto_segment": null,
-   "gross_profit_auto_segment": null,
-   "cogs_auto_segment": null,
-   "revenue_energy_segment": null,
-   "gross_profit_energy_segment": null,
-   "revenue_auto_sales": null,
-   "revenue_reg_credits": null,
-   "revenue_auto_leasing": null,
-   "revenue_services": null,
-   "revenue_energy_sales": null,
-   "revenue_energy_leasing": null,
-   "revenue_us": null,
-   "revenue_china": null,
-   "revenue_other": null,
-   "operating_income": null,
-   "ocf": null,
-   "capex": null,
-   "shares_outstanding": null,
-   "total_debt": null,
-   "cash_and_investments": null,
-   "short_term_investments": null,
-   "deferred_revenue_current": null,
-   "deferred_revenue_noncurrent": null,
+   "fsd_subscriptions": 1740000.0,
+   "revenue_total": 28046000000.0,
+   "revenue_auto_segment": 25165000000.0,
+   "gross_profit_auto_segment": 4540000000.0,
+   "cogs_auto_segment": 20625000000.0,
+   "revenue_energy_segment": 2881000000.0,
+   "gross_profit_energy_segment": 954000000.0,
+   "revenue_auto_sales": 20094000000.0,
+   "revenue_reg_credits": 113000000.0,
+   "revenue_auto_leasing": 353000000.0,
+   "revenue_services": 4605000000.0,
+   "revenue_energy_sales": 2745000000.0,
+   "revenue_energy_leasing": 136000000.0,
+   "revenue_us": 12495000000.0,
+   "revenue_china": 5209000000.0,
+   "revenue_other": 10342000000.0,
+   "operating_income": 718000000.0,
+   "ocf": 6263000000.0,
+   "capex": 4732000000.0,
+   "shares_outstanding": 3953000000.0,
+   "total_debt": 9523000000.0,
+   "cash_and_investments": 17853000000.0,
+   "short_term_investments": 27594000000.0,
+   "deferred_revenue_current": 4661000000.0,
+   "deferred_revenue_noncurrent": 4126000000.0,
    "etiqueta_volumen": "Model 3/Y",
    "etiqueta_nicho": "Other Models",
-   "asp_implicito": null,
-   "coste_por_vehiculo": null,
+   "asp_implicito": 41300.469444969705,
+   "coste_por_vehiculo": 42391.86733863343,
    "ratio_produccion_entregas": 0.954492201951773,
-   "margen_auto_sin_creditos": null,
-   "margen_energia": null,
-   "margen_operativo": null,
-   "fcf": null
+   "margen_auto_sin_creditos": 0.1767124381286923,
+   "margen_energia": 0.33113502256161054,
+   "margen_operativo": 0.02560079868786993,
+   "fcf": 1531000000.0
   }
  ],
  "mensual": [
@@ -3211,58 +3211,58 @@
   },
   {
    "month": "2026-10",
-   "price_close": 370.59,
-   "eurusd": 1.1225,
-   "ev_ventas": 13.79358911010529,
-   "per": 384.7160646687697,
-   "ev_ebitda": 131.74282514517466,
-   "p_fcf": 253.98471190558834
+   "price_close": 386.47,
+   "eurusd": 1.1205,
+   "ev_ventas": 14.403706768369219,
+   "per": 474.7408048477315,
+   "ev_ebitda": 146.68553687315634,
+   "p_fcf": 462.5237390251287
   }
  ],
  "retorno_eur": {
   "desde_2019": {
    "desde": "2019-01",
    "hasta": "2026-10",
-   "usd": 17.10582372483877,
-   "eur": 17.530040351977533,
-   "efecto_divisa": 0.023429844097995645
+   "usd": 17.88166894664843,
+   "eur": 18.358555364488815,
+   "efecto_divisa": 0.02525658188308788
   },
   "ultimos_12_meses": {
    "desde": "2025-10",
    "hasta": "2026-10",
-   "usd": -0.18829945680742954,
-   "eur": -0.16450885736775422,
-   "efecto_divisa": 0.029309576837416307
+   "usd": -0.1535176099526896,
+   "eur": -0.12715238423858777,
+   "efecto_divisa": 0.03114680946006243
   },
   "en_el_anio": {
    "desde": "2025-12",
    "hasta": "2026-10",
-   "usd": -0.1759539268878414,
-   "eur": -0.13741279651956673,
-   "efecto_divisa": 0.04677060133630295
+   "usd": -0.14064306679711824,
+   "eur": -0.09884480453959299,
+   "efecto_divisa": 0.048639000446229375
   }
  },
  "simulador": {
   "base": {
    "ingresos": {
-    "automocion": 90820000000.0,
-    "energia": 12799000000.0
+    "automocion": 91305000000.0,
+    "energia": 12265000000.0
    },
    "margen_bruto": {
-    "automocion": 0.1736511781545915,
-    "energia": 0.2940073443237753
+    "automocion": 0.1788511034444992,
+    "energia": 0.2971055849979617
    },
-   "id_sobre_ingresos": 0.07460021810671788,
-   "sga_sobre_ingresos": 0.06786400177573611
+   "id_sobre_ingresos": 0.08555566283672879,
+   "sga_sobre_ingresos": 0.0722699623443082
   },
   "balance": {
-   "caja": 15219000000.0,
-   "inversiones": 28305000000.0,
-   "deuda": 9342000000.0,
-   "acciones": 3949000000.0
+   "caja": 17853000000.0,
+   "inversiones": 27594000000.0,
+   "deuda": 9523000000.0,
+   "acciones": 3953000000.0
   },
-  "wacc": 0.14613328657799363,
-  "precio": 370.59,
+  "wacc": 0.14465729848022577,
+  "precio": 386.47,
   "supuestos": {
    "version": "2026-09-23",
    "comun": {
@@ -3333,13 +3333,13 @@
    }
   },
   "anio_cero": {
-   "hasta": "2026Q2",
-   "ocf": 18685000000.0,
-   "capex": 12923000000.0,
-   "fcf_reportado": 5762000000.0,
+   "hasta": "2026Q3",
+   "ocf": 18710000000.0,
+   "capex": 15407000000.0,
+   "fcf_reportado": 3303000000.0,
    "ingresos_previos": {
-    "automocion": 81764000000.0,
-    "energia": 10956000000.0
+    "automocion": 83638000000.0,
+    "energia": 11995000000.0
    }
   }
  },
@@ -3349,112 +3349,112 @@
    "etiqueta": "R",
    "fuente": "Nota de producción y entregas (8-K, exhibit 99.1)",
    "ultimo_periodo": "2026Q3",
-   "obtenido": "2026-10-04"
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Días de inventario",
    "etiqueta": "R",
    "fuente": "Update Letter trimestral",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Almacenamiento desplegado (GWh)",
    "etiqueta": "R",
    "fuente": "Update Letter trimestral; hasta que se publica, nota de producción y entregas (8-K)",
    "ultimo_periodo": "2026Q3",
-   "obtenido": "2026-10-04"
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Suscripciones activas de FSD",
    "etiqueta": "R",
    "fuente": "Update Letter trimestral",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Ingresos, márgenes y resultado",
    "etiqueta": "R",
    "fuente": "API XBRL de la SEC (companyfacts)",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Segmentos, líneas de producto y regiones",
    "etiqueta": "R",
    "fuente": "Estados renderizados de los 10-Q y 10-K",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Flujo de caja y capex",
    "etiqueta": "R",
    "fuente": "API XBRL de la SEC, desacumulado",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Deuda, caja e inversiones a corto plazo",
    "etiqueta": "R",
    "fuente": "API XBRL de la SEC",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Acciones en circulación",
    "etiqueta": "R",
    "fuente": "API XBRL de la SEC, normalizadas por split",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Deferred revenue",
    "etiqueta": "R",
    "fuente": "API XBRL de la SEC",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "ASP implícito y coste por vehículo",
    "etiqueta": "D",
    "fuente": "Ingresos por venta de vehículos y coste de automoción entre entregas. Aproximado: las entregas incluyen leasing y el coste incluye servicios",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Márgenes derivados y FCF",
    "etiqueta": "D",
    "fuente": "Calculados a partir de los estados",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Cotización de TSLA y SPY",
    "etiqueta": "R",
    "fuente": "api.nasdaq.com",
    "ultimo_periodo": "2026-10",
-   "obtenido": "2026-10-04"
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Tipo sin riesgo a 10 años",
    "etiqueta": "R",
    "fuente": "Tesoro de EE.UU.",
    "ultimo_periodo": "2026-10",
-   "obtenido": "2026-10-04"
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "EUR/USD",
    "etiqueta": "R",
    "fuente": "Banco Central Europeo",
    "ultimo_periodo": "2026-10",
-   "obtenido": "2026-10-04"
+   "obtenido": "2026-10-22"
   },
   {
    "kpi": "Valoración, múltiplos y opcionalidad",
    "etiqueta": "D",
    "fuente": "Motor de valoración, supuestos 2026-09-23",
-   "ultimo_periodo": "2026Q2",
-   "obtenido": "2026-10-04"
+   "ultimo_periodo": "2026Q3",
+   "obtenido": "2026-10-22"
   }
  ],
  "historico": [
@@ -3474,22 +3474,22 @@
   },
   {
    "mes": "2026-10",
-   "fecha": "2026-10-04",
+   "fecha": "2026-10-22",
    "version_supuestos": "2026-09-23",
    "huella": "02f115965fa8c9d8",
-   "ttm_hasta": "2026Q2",
-   "precio": 370.59,
-   "vpa_bear": 13.315855383565923,
-   "vpa_base": 23.533246170189766,
-   "vpa_bull": 42.035158801331214,
-   "crecimiento_implicito": 0.7354296875000002,
-   "opcionalidad_implicita": 1370527120873.9207,
-   "wacc": 0.14613328657799363
+   "ttm_hasta": "2026Q3",
+   "precio": 386.47,
+   "vpa_bear": 12.961114438743685,
+   "vpa_base": 23.014873140070517,
+   "vpa_bull": 41.30881835362436,
+   "crecimiento_implicito": 0.7421484375,
+   "opcionalidad_implicita": 1436738116477.3013,
+   "wacc": 0.14465729848022577
   }
  ],
  "hitos": {
-  "version": "2026-09-24",
-  "hoy": "2026-10-04",
+  "version": "2026-10-22",
+  "hoy": "2026-10-22",
   "fecha_base_mercados": "2026-09-23",
   "hitos": [
    {
@@ -3654,7 +3654,7 @@
        "vencida_vigente": false,
        "meses_vigente_vs_primera": 71.9835728952772,
        "tipo": "minimo",
-       "meses": 69.09240246406571
+       "meses": 69.68377823408625
       },
       "deslizamiento_oficial": null,
       "fechas_prometidas": [
@@ -3674,7 +3674,7 @@
       },
       "barra": {
        "desde": "2020-12-31",
-       "hasta": "2026-10-04",
+       "hasta": "2026-10-22",
        "tipo": "retrasado",
        "invertida": false
       }
@@ -3692,7 +3692,12 @@
       "id": "inicio-produccion",
       "texto": "Inicio de producción",
       "etiqueta": "R",
-      "cumplido": null
+      "cumplido": {
+       "fecha": "2026-10-21",
+       "fuente_tipo": "oficial",
+       "fuente": "Tesla Q3 2026 Update: «Optimus production began in Fremont on our high-volume lines»",
+       "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      }
      },
      {
       "id": "produccion-repetible",
@@ -3801,7 +3806,7 @@
      }
     ],
     "estancado": null,
-    "estado": "no iniciado",
+    "estado": "en curso",
     "metricas": [],
     "cumplimiento": null,
     "en_indice": true,
@@ -3810,15 +3815,17 @@
       "paso": "inicio-produccion",
       "texto": "Inicio de producción",
       "en_indice": true,
-      "cumplimiento": null,
+      "cumplimiento": {
+       "fecha": "2026-10-21"
+      },
       "deslizamiento": {
        "primera": "2023-12-31",
        "vigente": "2026-12-31",
        "re_promesas": 7,
        "vencida_vigente": false,
        "meses_vigente_vs_primera": 36.0082135523614,
-       "tipo": "minimo",
-       "meses": 33.1170431211499
+       "tipo": "realizado",
+       "meses": 33.67556468172484
       },
       "deslizamiento_oficial": {
        "primera": "2025-12-31",
@@ -3826,8 +3833,8 @@
        "re_promesas": 2,
        "vencida_vigente": false,
        "meses_vigente_vs_primera": 11.991786447638603,
-       "tipo": "minimo",
-       "meses": 9.100616016427105
+       "tipo": "realizado",
+       "meses": 9.659137577002053
       },
       "fechas_prometidas": [
        "2023-12-31",
@@ -3850,8 +3857,8 @@
       },
       "barra": {
        "desde": "2023-12-31",
-       "hasta": "2026-10-04",
-       "tipo": "retrasado",
+       "hasta": "2026-10-21",
+       "tipo": "cumplido",
        "invertida": false
       }
      }
@@ -4046,6 +4053,32 @@
       }
      },
      {
+      "id": "mercado-croacia",
+      "tipo": "mercado",
+      "texto": "FSD (Supervised) autorizado en Croacia",
+      "etiqueta": "R",
+      "nota": "Según la prensa, la oficina croata de metrología (DZM) confirmó la aprobación el 2026-09-28; no se encontró su nota oficial.",
+      "cumplido": {
+       "fecha": "2026-10-21",
+       "fuente_tipo": "oficial",
+       "fuente": "Tesla Q3 2026 Update: aprobaciones en Croacia, Eslovenia, Chequia y Eslovaquia",
+       "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      }
+     },
+     {
+      "id": "mercado-eslovaquia",
+      "tipo": "mercado",
+      "texto": "FSD (Supervised) autorizado en Eslovaquia",
+      "etiqueta": "R",
+      "nota": "Según la prensa, el Ministerio de Transporte eslovaco reconoció la aprobación neerlandesa el 2026-10-16; no se encontró su nota oficial.",
+      "cumplido": {
+       "fecha": "2026-10-21",
+       "fuente_tipo": "oficial",
+       "fuente": "Tesla Q3 2026 Update: aprobaciones en Croacia, Eslovenia, Chequia y Eslovaquia",
+       "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      }
+     },
+     {
       "id": "homologacion-ue",
       "texto": "Homologación de FSD (Supervised) a escala de la UE",
       "etiqueta": "R",
@@ -4106,6 +4139,15 @@
       "fuente": "CFO Vaibhav Taneja, llamada Q1 2026 (StockAnalysis): aprobación en toda la UE",
       "enlace": "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/",
       "cita": "an EU-wide approval later in Q2"
+     },
+     {
+      "declarada": "2026-10-21",
+      "paso": "homologacion-ue",
+      "fecha_prometida": "2027-Q1",
+      "fuente_tipo": "musk",
+      "fuente": "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): aprobación en toda la UE",
+      "enlace": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+      "cita": "I would be surprised if it takes longer than Q1"
      }
     ],
     "estancado": null,
@@ -4114,23 +4156,23 @@
      {
       "id": "suscripciones",
       "nombre": "Suscripciones activas",
-      "valor": null,
+      "valor": 1740000.0,
       "umbral": 2500000.0,
       "unidad": "suscripciones",
-      "cumple": null
+      "cumple": false
      },
      {
       "id": "crecimiento_4t",
       "nombre": "Subidas trimestrales seguidas",
-      "valor": null,
+      "valor": 4,
       "umbral": 4,
       "unidad": "trimestres",
-      "cumple": null
+      "cumple": true
      },
      {
       "id": "mercados_nuevos",
       "nombre": "Mercados nuevos autorizados",
-      "valor": 0,
+      "valor": 2,
       "umbral": 5,
       "unidad": "mercados",
       "cumple": false
@@ -4194,12 +4236,12 @@
       "cumplimiento": null,
       "deslizamiento": {
        "primera": "2026-06-30",
-       "vigente": "2026-06-30",
-       "re_promesas": 0,
-       "vencida_vigente": true,
-       "meses_vigente_vs_primera": 0.0,
+       "vigente": "2027-03-31",
+       "re_promesas": 1,
+       "vencida_vigente": false,
+       "meses_vigente_vs_primera": 9.00205338809035,
        "tipo": "minimo",
-       "meses": 3.154004106776181
+       "meses": 3.7453798767967146
       },
       "deslizamiento_oficial": {
        "primera": "2026-06-30",
@@ -4208,23 +4250,24 @@
        "vencida_vigente": true,
        "meses_vigente_vs_primera": 0.0,
        "tipo": "minimo",
-       "meses": 3.154004106776181
+       "meses": 3.7453798767967146
       },
       "fechas_prometidas": [
-       "2026-06-30"
+       "2026-06-30",
+       "2027-03-31"
       ],
       "promesa_vigente": {
-       "declarada": "2026-04-22",
+       "declarada": "2026-10-21",
        "paso": "homologacion-ue",
-       "fecha_prometida": "2026-Q2",
-       "fuente_tipo": "oficial",
-       "fuente": "CFO Vaibhav Taneja, llamada Q1 2026 (StockAnalysis): aprobación en toda la UE",
-       "enlace": "https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/",
-       "cita": "an EU-wide approval later in Q2"
+       "fecha_prometida": "2027-Q1",
+       "fuente_tipo": "musk",
+       "fuente": "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): aprobación en toda la UE",
+       "enlace": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+       "cita": "I would be surprised if it takes longer than Q1"
       },
       "barra": {
        "desde": "2026-06-30",
-       "hasta": "2026-10-04",
+       "hasta": "2026-10-22",
        "tipo": "retrasado",
        "invertida": false
       }
@@ -4245,7 +4288,7 @@
      {
       "id": "margen_auto_sin_creditos",
       "nombre": "Margen bruto de automoción sin créditos, 4 trimestres",
-      "valor": 0.1468903268350987,
+      "valor": 0.1589114664742896,
       "umbral": 0.2,
       "unidad": "ratio",
       "cumple": false
@@ -4384,8 +4427,12 @@
       "id": "inicio-produccion-nevada",
       "texto": "Inicio de producción en la planta de Nevada",
       "etiqueta": "R",
-      "nota": "Indicio: el 2026-04-29 la cuenta Tesla Semi en X publicó «First Semi off high volume line», pero el Q2 2026 Update (2026-07-22) aún lista Nevada en «Commissioning».",
-      "cumplido": null
+      "cumplido": {
+       "fecha": "2026-10-21",
+       "fuente_tipo": "oficial",
+       "fuente": "Tesla Q3 2026 Update: «We began volume production of Tesla Semi»; Nevada pasa a «Production»",
+       "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      }
      },
      {
       "id": "aumento-sostenido-produccion",
@@ -4441,7 +4488,7 @@
      }
     ],
     "estancado": null,
-    "estado": "no iniciado",
+    "estado": "en curso",
     "metricas": [],
     "cumplimiento": null,
     "en_indice": true,
@@ -4450,24 +4497,26 @@
       "paso": "inicio-produccion-nevada",
       "texto": "Inicio de producción en la planta de Nevada",
       "en_indice": true,
-      "cumplimiento": null,
+      "cumplimiento": {
+       "fecha": "2026-10-21"
+      },
       "deslizamiento": {
        "primera": "2025-12-31",
        "vigente": "2026-06-30",
        "re_promesas": 2,
-       "vencida_vigente": true,
+       "vencida_vigente": false,
        "meses_vigente_vs_primera": 5.946611909650924,
-       "tipo": "minimo",
-       "meses": 9.100616016427105
+       "tipo": "realizado",
+       "meses": 9.659137577002053
       },
       "deslizamiento_oficial": {
        "primera": "2025-12-31",
        "vigente": "2026-06-30",
        "re_promesas": 2,
-       "vencida_vigente": true,
+       "vencida_vigente": false,
        "meses_vigente_vs_primera": 5.946611909650924,
-       "tipo": "minimo",
-       "meses": 9.100616016427105
+       "tipo": "realizado",
+       "meses": 9.659137577002053
       },
       "fechas_prometidas": [
        "2025-12-31",
@@ -4485,8 +4534,8 @@
       },
       "barra": {
        "desde": "2025-12-31",
-       "hasta": "2026-10-04",
-       "tipo": "retrasado",
+       "hasta": "2026-10-21",
+       "tipo": "cumplido",
        "invertida": false
       }
      }
@@ -4780,7 +4829,7 @@
      "vencida_vigente": false,
      "meses_vigente_vs_primera": 77.93018480492813,
      "tipo": "minimo",
-     "meses": 69.09240246406571
+     "meses": 69.68377823408625
     },
     "deslizamiento_oficial": null,
     "fechas_prometidas": [
@@ -4798,7 +4847,7 @@
     },
     "barra": {
      "desde": "2020-12-31",
-     "hasta": "2026-10-04",
+     "hasta": "2026-10-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -4967,7 +5016,7 @@
      "vencida_vigente": true,
      "meses_vigente_vs_primera": 96.0,
      "tipo": "minimo",
-     "meses": 105.10061601642711
+     "meses": 105.69199178644764
     },
     "deslizamiento_oficial": {
      "primera": "2025-12-31",
@@ -4976,7 +5025,7 @@
      "vencida_vigente": true,
      "meses_vigente_vs_primera": 0.0,
      "tipo": "minimo",
-     "meses": 9.100616016427105
+     "meses": 9.69199178644764
     },
     "fechas_prometidas": [
      "2017-12-31",
@@ -4995,7 +5044,7 @@
     },
     "barra": {
      "desde": "2017-12-31",
-     "hasta": "2026-10-04",
+     "hasta": "2026-10-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -5111,6 +5160,14 @@
       "fuente": "Musk en Davos (Fox Business): venta al público",
       "enlace": "https://www.foxbusiness.com/economy/elon-musk-says-tesla-likely-sell-humanoid-robots-end-next-year",
       "cita": "By the end of next year, I think we'll be selling humanoid robots"
+     },
+     {
+      "declarada": "2026-10-21",
+      "fecha_prometida": "2027",
+      "fuente_tipo": "musk",
+      "fuente": "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): entregas a empresas externas",
+      "enlace": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+      "cita": "I do expect these issues to be solved around the end of next year"
      }
     ],
     "estado": "vigente",
@@ -5118,29 +5175,30 @@
     "deslizamiento": {
      "primera": "2025-12-31",
      "vigente": "2027-12-31",
-     "re_promesas": 2,
+     "re_promesas": 3,
      "vencida_vigente": false,
      "meses_vigente_vs_primera": 23.983572895277206,
      "tipo": "minimo",
-     "meses": 9.100616016427105
+     "meses": 9.69199178644764
     },
     "deslizamiento_oficial": null,
     "fechas_prometidas": [
      "2025-12-31",
      "2026-12-31",
+     "2027-12-31",
      "2027-12-31"
     ],
     "promesa_vigente": {
-     "declarada": "2026-01-22",
+     "declarada": "2026-10-21",
      "fecha_prometida": "2027",
      "fuente_tipo": "musk",
-     "fuente": "Musk en Davos (Fox Business): venta al público",
-     "enlace": "https://www.foxbusiness.com/economy/elon-musk-says-tesla-likely-sell-humanoid-robots-end-next-year",
-     "cita": "By the end of next year, I think we'll be selling humanoid robots"
+     "fuente": "Musk, llamada de resultados Q3 2026 (transcripción Motley Fool): entregas a empresas externas",
+     "enlace": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+     "cita": "I do expect these issues to be solved around the end of next year"
     },
     "barra": {
      "desde": "2025-12-31",
-     "hasta": "2026-10-04",
+     "hasta": "2026-10-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -5149,33 +5207,33 @@
   "indice": {
    "todas": {
     "realizado": {
-     "n": 8,
-     "media": 12.041067761806982,
-     "mediana": 4.878850102669404
+     "n": 10,
+     "media": 13.966324435318276,
+     "mediana": 7.835728952772074
     },
     "minimo": {
      "n": 15,
-     "media": 26.272416153319643,
-     "mediana": 9.100616016427105
+     "media": 26.54401095140315,
+     "mediana": 9.69199178644764
     },
-    "cumplidos": 8,
-    "retrasados": 7,
+    "cumplidos": 10,
+    "retrasados": 5,
     "a_tiempo": 0,
     "abandonados": 1
    },
    "oficiales": {
     "realizado": {
-     "n": 8,
-     "media": 5.66735112936345,
-     "mediana": 4.878850102669404
+     "n": 10,
+     "media": 6.465708418891171,
+     "mediana": 7.835728952772074
     },
     "minimo": {
      "n": 12,
-     "media": 6.316221765913759,
-     "mediana": 7.5564681724846
+     "media": 6.507871321013005,
+     "mediana": 7.835728952772074
     },
-    "cumplidos": 8,
-    "retrasados": 4,
+    "cumplidos": 10,
+    "retrasados": 2,
     "a_tiempo": 0,
     "abandonados": 0
    },
@@ -5188,19 +5246,19 @@
   "transversal": {
    "caja": {
     "anio": 2026,
-    "guia": 25000000000,
-    "texto_guia": "más de 25.000 millones",
-    "capex_anio": 8282000000.0,
-    "trimestres_anio": 2,
-    "capex_restante": 16718000000.0,
-    "cuota_guia": 0.33128,
-    "trimestres_restantes": 2,
-    "capex_por_trimestre_restante": 8359000000.0,
+    "guia": 20000000000,
+    "texto_guia": "más de 20.000 millones",
+    "capex_anio": 13014000000.0,
+    "trimestres_anio": 3,
+    "capex_restante": 6986000000.0,
+    "cuota_guia": 0.6507,
+    "trimestres_restantes": 1,
+    "capex_por_trimestre_restante": 6986000000.0,
     "completo": true,
     "motivo_incompleto": null,
-    "fcf_12m": 5762000000.0,
-    "fuente": "Tesla Form 10-Q Q2 2026 (MD&A); ya en el 10-Q Q1 2026",
-    "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    "fcf_12m": 3303000000.0,
+    "fuente": "Tesla Form 10-Q Q3 2026 (MD&A): «in excess of $20 billion»; antes, más de 25.000 millones (10-Q Q1 y Q2 2026)",
+    "enlace": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
    },
    "seguridad": [
     {
