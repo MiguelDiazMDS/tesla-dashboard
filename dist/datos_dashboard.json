@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22",
+ "generado": "2026-11-22",
  "valoracion": {
   "fecha": "2026-10-22",
   "version_supuestos": "2026-09-23",
@@ -3489,7 +3489,7 @@
  ],
  "hitos": {
   "version": "2026-10-22",
-  "hoy": "2026-10-22",
+  "hoy": "2026-11-22",
   "fecha_base_mercados": "2026-09-23",
   "hitos": [
    {
@@ -3654,7 +3654,7 @@
        "vencida_vigente": false,
        "meses_vigente_vs_primera": 71.9835728952772,
        "tipo": "minimo",
-       "meses": 69.68377823408625
+       "meses": 70.70225872689939
       },
       "deslizamiento_oficial": null,
       "fechas_prometidas": [
@@ -3674,7 +3674,7 @@
       },
       "barra": {
        "desde": "2020-12-31",
-       "hasta": "2026-10-22",
+       "hasta": "2026-11-22",
        "tipo": "retrasado",
        "invertida": false
       }
@@ -4241,7 +4241,7 @@
        "vencida_vigente": false,
        "meses_vigente_vs_primera": 9.00205338809035,
        "tipo": "minimo",
-       "meses": 3.7453798767967146
+       "meses": 4.763860369609857
       },
       "deslizamiento_oficial": {
        "primera": "2026-06-30",
@@ -4250,7 +4250,7 @@
        "vencida_vigente": true,
        "meses_vigente_vs_primera": 0.0,
        "tipo": "minimo",
-       "meses": 3.7453798767967146
+       "meses": 4.763860369609857
       },
       "fechas_prometidas": [
        "2026-06-30",
@@ -4267,7 +4267,7 @@
       },
       "barra": {
        "desde": "2026-06-30",
-       "hasta": "2026-10-22",
+       "hasta": "2026-11-22",
        "tipo": "retrasado",
        "invertida": false
       }
@@ -4829,7 +4829,7 @@
      "vencida_vigente": false,
      "meses_vigente_vs_primera": 77.93018480492813,
      "tipo": "minimo",
-     "meses": 69.68377823408625
+     "meses": 70.70225872689939
     },
     "deslizamiento_oficial": null,
     "fechas_prometidas": [
@@ -4847,7 +4847,7 @@
     },
     "barra": {
      "desde": "2020-12-31",
-     "hasta": "2026-10-22",
+     "hasta": "2026-11-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -5016,7 +5016,7 @@
      "vencida_vigente": true,
      "meses_vigente_vs_primera": 96.0,
      "tipo": "minimo",
-     "meses": 105.69199178644764
+     "meses": 106.71047227926078
     },
     "deslizamiento_oficial": {
      "primera": "2025-12-31",
@@ -5025,7 +5025,7 @@
      "vencida_vigente": true,
      "meses_vigente_vs_primera": 0.0,
      "tipo": "minimo",
-     "meses": 9.69199178644764
+     "meses": 10.710472279260781
     },
     "fechas_prometidas": [
      "2017-12-31",
@@ -5044,7 +5044,7 @@
     },
     "barra": {
      "desde": "2017-12-31",
-     "hasta": "2026-10-22",
+     "hasta": "2026-11-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -5179,7 +5179,7 @@
      "vencida_vigente": false,
      "meses_vigente_vs_primera": 23.983572895277206,
      "tipo": "minimo",
-     "meses": 9.69199178644764
+     "meses": 10.710472279260781
     },
     "deslizamiento_oficial": null,
     "fechas_prometidas": [
@@ -5198,7 +5198,7 @@
     },
     "barra": {
      "desde": "2025-12-31",
-     "hasta": "2026-10-22",
+     "hasta": "2026-11-22",
      "tipo": "retrasado",
      "invertida": false
     }
@@ -5213,8 +5213,8 @@
     },
     "minimo": {
      "n": 15,
-     "media": 26.54401095140315,
-     "mediana": 9.69199178644764
+     "media": 26.883504449007532,
+     "mediana": 10.710472279260781
     },
     "cumplidos": 10,
     "retrasados": 5,
@@ -5229,7 +5229,7 @@
     },
     "minimo": {
      "n": 12,
-     "media": 6.507871321013005,
+     "media": 6.677618069815195,
      "mediana": 7.835728952772074
     },
     "cumplidos": 10,

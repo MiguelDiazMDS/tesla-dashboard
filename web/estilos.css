@@ -37,6 +37,9 @@ h1 { font-size: 30px; line-height: 1.2; }
 h2 { font-size: 21px; }
 h3 { font-size: 15px; }
 .nota { color: var(--tinta-suave); font-size: 13px; margin: 0; }
+.pie { border-top: 1px solid var(--linea); padding: 24px 0 8px; }
+.pie a { color: var(--tinta); text-decoration-color: var(--acento); text-underline-offset: 3px; }
+.pie a:hover { text-decoration-thickness: 2px; }
 .aviso { margin: 0; font-size: 13px; color: var(--tinta-suave); }
 
 /* ---------- Cabecera ---------- */

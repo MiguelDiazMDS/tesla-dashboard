@@ -348,7 +348,9 @@ def test_documento_completo_para_servidor_propio():
     cabecera, cuerpo = doc.split("<body>")
     assert '<html lang="es">' in cabecera
     assert '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">' in cabecera
-    assert '<meta name="robots" content="noindex, nofollow">' in cabecera
+    assert "noindex" not in doc
+    assert '<meta name="author" content="@libemister">' in cabecera
+    assert '<link rel="author" href="https://x.com/libemister">' in cabecera
     assert "<title>Valoración TSLA</title>" in cabecera and "<style>body{}</style>" in cabecera
     assert doc.count('<meta charset="utf-8">') == 1
     assert cuerpo.lstrip().startswith('<div class="pagina">')

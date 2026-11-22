@@ -207,7 +207,7 @@ Se publica como artifact privado de claude.ai, cuya URL se guarda en `.env`
 (`ARTIFACT_URL`). Se republica el mismo fichero para conservar la URL.
 
 La construcción genera también `dist/web/index.html`, la misma página como
-documento HTML completo (doctype, viewport y `noindex`), para publicarla en
+documento HTML completo (doctype, viewport y autoría), para publicarla en
 un servidor propio: se sube ese único fichero (por ejemplo con FileZilla, por
 SFTP) a la carpeta pública del servidor. Solo necesita acceso a cdnjs y a
 Google Fonts. En un servidor propio la página es pública salvo que se proteja

@@ -153,7 +153,8 @@ def documento_completo(fragmento: str) -> str:
     """El fragmento del artifact convertido en un documento HTML completo.
 
     Lo anterior al contenedor de la pagina (titulo, fuentes y estilos) va al
-    head; el resto, al body. Sin indexar: es un analisis personal.
+    head; el resto, al body. La pagina es publica e indexable, con la autoria
+    del proyecto.
     """
     corte = fragmento.find(INICIO_CUERPO)
     if corte < 0:
@@ -163,7 +164,8 @@ def documento_completo(fragmento: str) -> str:
     return ("<!doctype html>\n<html lang=\"es\">\n<head>\n"
             f"{CHARSET}\n"
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-            '<meta name="robots" content="noindex, nofollow">\n'
+            '<meta name="author" content="@libemister">\n'
+            '<link rel="author" href="https://x.com/libemister">\n'
             f"{cabecera}\n</head>\n<body>\n{cuerpo}\n</body>\n</html>\n")
 
 

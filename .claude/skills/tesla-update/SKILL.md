@@ -85,6 +85,7 @@ En cualquier mes, si el usuario lo pide, revisa las novedades de un hito concret
    export GIT_AUTHOR_NAME="$(grep '^GIT_PUBLIC_NAME=' .env | cut -d= -f2- | tr -d '\r')" GIT_AUTHOR_EMAIL="$(grep '^GIT_PUBLIC_EMAIL=' .env | cut -d= -f2- | tr -d '\r')" && export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME" GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL" && git branch -f publico "$(git commit-tree 'master^{tree}' -p publico -m 'actualizacion AAAA-MM')"
    ```
 3. Pregunta al usuario si lo subes. Solo con su sí: `git push origin publico:main`. Nunca `git push` de `master` ni con `--force`.
+4. Cada push a `main` despliega solo en Vercel (proyecto `tesla-dashboard`, sirve `dist/web` sin compilar, en abierto): https://tesla-dashboard-lovat.vercel.app. Comprueba que responde 200 con la cabecera nueva.
 
 ## 6. Resumen para el usuario
 
